@@ -406,16 +406,36 @@
     
     /* Project Card Styles with RGB Glow */
     .project-card {
-      display: block;
+      display: flex;
+      flex-direction: column;
       background: var(--card-bg-color);
       border: 1px solid var(--border-color);
       border-radius: 16px;
-      padding: 25px;
+      padding: 0;
       text-decoration: none;
       color: var(--font-color);
       transition: transform 0.4s, box-shadow 0.4s, border-color 0.3s;
       position: relative;
       overflow: hidden;
+    }
+    
+    .project-card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+      transition: transform 0.3s;
+    }
+    
+    .project-card:hover .project-card-image {
+      transform: scale(1.05);
+    }
+    
+    .project-card-content {
+      padding: 25px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
     
     /* RGB Glow Animation */
@@ -944,140 +964,160 @@
           title: "GPA & CGPA Calculator", 
           description: "An intuitive tool for students to accurately calculate their Grade Point Averages, featuring a clean and user-friendly interface.", 
           link: "https://cgpa-calc-aj.vercel.app/",
-          tags: ["HTML", "CSS", "JavaScript", "Education"]
+          tags: ["HTML", "CSS", "JavaScript", "Education"],
+          image: "https://via.placeholder.com/400x200/8A2BE2/ffffff?text=GPA+Calculator"
         },
         { 
           category: "Geolocation", 
           title: "Location Tracking Website", 
           description: "A web application that demonstrates real-time location fetching, built to explore and implement geolocation browser APIs.", 
           link: "https://cgpa-calc-location-fetch.vercel.app/",
-          tags: ["HTML", "CSS", "JavaScript", "Geolocation API"]
+          tags: ["HTML", "CSS", "JavaScript", "Geolocation API"],
+          image: "https://via.placeholder.com/400x200/4682B4/ffffff?text=Location+Tracker"
         },
         { 
           category: "Business", 
           title: "MVK Transports Website", 
           description: "A professional, multi-page business website designed for a transport company, featuring service details and contact information.", 
           link: "https://mvk-transports.vercel.app/",
-          tags: ["HTML", "CSS", "JavaScript", "Business", "Multi-page"]
+          tags: ["HTML", "CSS", "JavaScript", "Business", "Multi-page"],
+          image: "mvk-transports-vercel-app-1024x768desktop-0c37c6 (1).png"
         },
         { 
           category: "Entertainment", 
           title: "MusiQ Player", 
           description: "A sleek and functional music player interface, allowing users to play and control audio directly in their browser.", 
           link: "https://aj-musiq-factory.vercel.app/",
-          tags: ["HTML", "CSS", "JavaScript", "Audio API", "Entertainment"]
+          tags: ["HTML", "CSS", "JavaScript", "Audio API", "Entertainment"],
+          image: "https://via.placeholder.com/400x200/FF6B6B/ffffff?text=MusiQ+Player"
         },
         { 
           category: "Web Tool", 
           title: "Age Calculator", 
           description: "A simple yet effective utility that calculates a user's precise age based on their date of birth.", 
           link: "https://kamesh14151.github.io/AJ-COMPANY/",
-          tags: ["HTML", "CSS", "JavaScript", "Utility", "Web Tool"]
+          tags: ["HTML", "CSS", "JavaScript", "Utility", "Web Tool"],
+          image: "https://via.placeholder.com/400x200/64ffda/000000?text=Age+Calculator"
         },
         { 
           category: "AI Tool", 
           title: "NexaRiq", 
           description: "An advanced AI-powered platform designed to revolutionize the way we interact with artificial intelligence in our daily tasks.", 
           link: "https://nexariq.ajstudioz.co.in/",
-          tags: ["AI", "Web Application", "JavaScript", "React", "Node.js"]
+          tags: ["AI", "Web Application", "JavaScript", "React", "Node.js"],
+          image: "https://via.placeholder.com/400x200/8A2BE2/ffffff?text=NexaRiq"
         },
         { 
           category: "Development Tool", 
           title: "NexaRiq Agentic Code Editor", 
           description: "A next-generation code editor integrated with AI agents to assist developers in writing, debugging, and optimizing code.", 
           link: "https://nexariq-agentic-code-editor.vercel.app/",
-          tags: ["Code Editor", "AI", "JavaScript", "React", "Development Tool"]
+          tags: ["Code Editor", "AI", "JavaScript", "React", "Development Tool"],
+          image: "https://via.placeholder.com/400x200/FF6B6B/ffffff?text=Agentic+Editor"
         },
         { 
           category: "AI Tool", 
           title: "TOMO Vibecoding Tool", 
           description: "AI-powered code editor that builds websites in seconds with multi-page support, auto-deployment, free hosting, and open-source AI models.", 
           link: "https://dev-aj-tool.vercel.app/",
-          tags: ["AI", "Code Editor", "React", "Next.js", "Llama"]
+          tags: ["AI", "Code Editor", "React", "Next.js", "Llama"],
+          image: "dev-aj-tool-vercel-app-1024x768desktop-acda78.png"
         },
         { 
           category: "AI Tool", 
           title: "TOMO Bot - AI Email Assistant", 
           description: "AI assistant that helps compose, send, and manage professional emails efficiently with intelligent commands.", 
           link: "https://workflow-one-gamma.vercel.app/",
-          tags: ["AI", "Email", "Productivity", "JavaScript"]
+          tags: ["AI", "Email", "Productivity", "JavaScript"],
+          image: "workflow-one-gamma-vercel-app-1024x768desktop-f1ea93.png"
         },
         { 
           category: "AI Tool", 
           title: "TOMO - AI-Powered Chat", 
           description: "Advanced AI chat assistant featuring intelligent tools, voice chat, image generation, and real-time search.", 
           link: "https://chat.tomoacademy.site",
-          tags: ["AI", "Chat", "Voice", "Image Generation", "Search"]
+          tags: ["AI", "Chat", "Voice", "Image Generation", "Search"],
+          image: "tomo-chat-web.jpeg"
         },
         { 
           category: "AI Tool", 
           title: "Morphic - AI Research Tool", 
           description: "User-friendly AI platform for interactive exploration with model selection, deep dive analysis, and real-time search.", 
           link: "https://epdi.vercel.app",
-          tags: ["AI", "Research", "DeepSeek", "Search"]
+          tags: ["AI", "Research", "DeepSeek", "Search"],
+          image: "epdi-vercel-app-1024x768desktop-dd33ea.png"
         },
         { 
           category: "Development Tool", 
           title: "AJ STUDIOZ Internal Dev Tool", 
           description: "AI-powered tool for generating React components and interfaces using natural language with multiple AI models.", 
           link: "https://v0-clone-eight-chi.vercel.app/",
-          tags: ["AI", "React", "v0", "Claude", "Grok", "DeepSeek"]
+          tags: ["AI", "React", "v0", "Claude", "Grok", "DeepSeek"],
+          image: "v0-clone-eight-chi-vercel-app-1024x768desktop-269994.png"
         },
         { 
           category: "AI Tool", 
           title: "AJ STUDIOZ AI Search Engine", 
           description: "Intelligent AI research companion delivering fast, accurate search tailored for comprehensive research requirements.", 
           link: "https://www.meow.ajstudioz.co.in/",
-          tags: ["AI", "Search", "Research"]
+          tags: ["AI", "Search", "Research"],
+          image: "meow-ajstudioz-co-in-1024x768desktop-052090 (1).png"
         },
         { 
           category: "Education", 
           title: "TOMO ACADEMY Website", 
           description: "Beginner-friendly educational platform with free C programming, statistics, and data visualization tutorials in Tamil and English.", 
           link: "https://tomoacademy.site",
-          tags: ["Education", "C Programming", "Statistics", "Tamil", "Videos"]
+          tags: ["Education", "C Programming", "Statistics", "Tamil", "Videos"],
+          image: "tomo-academy-gb8o-vercel-app-1024x768desktop-c714b6.png"
         },
         { 
           category: "Development Tool", 
           title: "cURL Tester", 
           description: "Professional online tool for testing and debugging API requests with cURL commands, request history, and response viewing.", 
           link: "https://curl.ajstudioz.co.in",
-          tags: ["API", "Testing", "cURL", "Developer Tool"]
+          tags: ["API", "Testing", "cURL", "Developer Tool"],
+          image: "v0-aj-studioz-curl-tester-vercel-app-1024x768desktop-d5d1b9.png"
         },
         { 
           category: "AI Tool", 
           title: "MEOW CHAT - AI Chat Platform", 
           description: "Free AI chat with multiple models for summaries, code generation, design, research, and deep thinking conversations.", 
           link: "https://www.meowchat.ajstudioz.co.in/",
-          tags: ["AI", "Chat", "Code", "Design", "Research"]
+          tags: ["AI", "Chat", "Code", "Design", "Research"],
+          image: "meowchat-ajstudioz-co-in-1024x768desktop-ebe418.png"
         },
         { 
           category: "Business", 
           title: "TOMO BUSINESS - Digital Cards", 
           description: "Modern networking tool for creating premium digital profiles with NFC sharing, custom domains, and real-time analytics.", 
           link: "https://tomo-business.vercel.app/",
-          tags: ["NFC", "Digital Card", "Business", "QR", "Networking"]
+          tags: ["NFC", "Digital Card", "Business", "QR", "Networking"],
+          image: "tomo-business-vercel-app-1024x768desktop-4a9161.png"
         },
         { 
           category: "Web Tool", 
           title: "TOMO MEOW - Document Formatter", 
           description: "Professional document formatter converting plain text or Markdown to styled documents with PDF/DOCX export.", 
           link: "https://doc.tomoacademy.site/",
-          tags: ["Markdown", "PDF", "DOCX", "Formatting", "Documents"]
+          tags: ["Markdown", "PDF", "DOCX", "Formatting", "Documents"],
+          image: "tomo-meow-studio-vercel-app-1024x768desktop-478946.png"
         },
         { 
           category: "Web Tool", 
           title: "AJ STORAGE - File Storage", 
           description: "File storage system with instant QR code generation for easy sharing and secure access to uploaded files.", 
           link: "https://cloud-zeta-snowy.vercel.app/",
-          tags: ["File Storage", "QR Code", "Cloud", "Sharing"]
+          tags: ["File Storage", "QR Code", "Cloud", "Sharing"],
+          image: "cloud-zeta-snowy-vercel-app-1024x768desktop-650d42.png"
         },
         { 
           category: "AI Tool", 
           title: "AJ STUDIOZ CHAT", 
           description: "AI chat platform with Lynxa models: Lite for fast responses, Pro for coding, and Student Pro for document processing.", 
           link: "https://chat.ajstudioz.co.in/",
-          tags: ["AI", "Chat", "Lynxa", "PDF", "Coding", "Export"]
+          tags: ["AI", "Chat", "Lynxa", "PDF", "Coding", "Export"],
+          image: "chat-ajstudioz-co-in-1024x768desktop-217e5d.png"
         }
       ];
       
@@ -1202,16 +1242,23 @@
         projectsToRender.forEach((project, i) => {
           const card = document.createElement('div');
           card.className = "project-card reveal";
+          
+          // Determine image source
+          const imageSrc = project.image || 'https://via.placeholder.com/400x200/8A2BE2/ffffff?text=' + encodeURIComponent(project.title);
+          
           card.innerHTML = `
-            <div class="thumb">${project.category}</div>
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <div class="tech-tags">
-              ${project.tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
+            <img src="${imageSrc}" alt="${project.title}" class="project-card-image" loading="lazy" onerror="this.src='https://via.placeholder.com/400x200/8A2BE2/ffffff?text=Project+Image'">
+            <div class="project-card-content">
+              <div class="thumb">${project.category}</div>
+              <h3>${project.title}</h3>
+              <p>${project.description}</p>
+              <div class="tech-tags">
+                ${project.tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
+              </div>
+              <a href="${project.link}" target="_blank" rel="noopener" class="view-project" data-index="${PROJECTS.indexOf(project)}">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
-            <a href="${project.link}" target="_blank" rel="noopener" class="view-project" data-index="${PROJECTS.indexOf(project)}">
-              View Project <i class="fa-solid fa-arrow-right"></i>
-            </a>
           `;
           card.style.transitionDelay = `${i * 0.1}s`;
           projectsGrid.appendChild(card);
