@@ -278,20 +278,34 @@
                 border: none;
                 max-width: 100%;
                 border-radius: 0;
+                display: grid;
+                grid-template-columns: var(--sidebar-w) 1fr;
             }
 
             .fab-controls {
-                display: none;
+                display: none !important;
             }
 
             .sidebar {
                 background-color: #fafafa !important;
                 -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
 
             .item-date {
                 background: #eef2ff !important;
                 -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .skill-box {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
             }
         }
 
