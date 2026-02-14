@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamesh R - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #8A2BE2;
+            --text-color: #333;
+            --light-text: #666;
+            --bg-color: #fff;
+            --border-color: #eee;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            background-color: #f4f4f7;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-color);
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-left h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .header-left p {
+            font-size: 1.2rem;
+            color: var(--light-text);
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--light-text);
+        }
+
+        .header-right div {
+            margin-bottom: 3px;
+        }
+
+        .header-right i {
+            width: 20px;
+            color: var(--primary-color);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .exp-item,
+        .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .item-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: var(--light-text);
+            margin-bottom: 8px;
+        }
+
+        .item-desc {
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-group h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #f0f0f5;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .print-btn:hover {
+            transform: scale(1.05);
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .print-btn {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-right {
+                text-align: left;
+                margin-top: 15px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <header>
+            <div class="header-left">
+                <h1>Kamesh R</h1>
+                <p>Computer Science Engineer | AI & Web Specialist</p>
+            </div>
+            <div class="header-right">
+                <div><i class="fas fa-envelope"></i> kamesh14151@gmail.com</div>
+                <div><i class="fas fa-phone"></i> +91 9723b6326</div>
+                <div><i class="fas fa-location-dot"></i> Tamil Nadu, India</div>
+                <div><i class="fab fa-linkedin"></i> linkedin.com/in/kamesh-aj</div>
+                <div><i class="fab fa-github"></i> github.com/kamesh14151</div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Ambitious and results-driven Computer Science student with a strong focus on Artificial Intelligence and
+                Full-Stack Development. Proven track record in building automated systems and professional web
+                applications. Passionate about leveraging cutting-edge technologies like React, Next.js, and AI
+                frameworks to solve complex real-world problems.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-item">
+                <div class="item-header">
+                    <span>Bachelor of Engineering in Computer Science</span>
+                    <span>2022 - 2026</span>
+                </div>
+                <div class="item-sub">
+                    <span>Sona College of Technology</span>
+                    <span>Salem, India</span>
+                </div>
+                <p class="item-desc">Focusing on AI & Machine Learning with a foundation in algorithms and data
+                    structures. Actively participating in technical hackathons and academic research projects.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages & Core</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML5 / CSS3</span>
+                        <span class="skill-tag">Postgres / MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">TailwindCSS</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Three.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>AI & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Netlify / Vercel</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">n8n / Agent Builder</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Adobe Suite</span>
+                        <span class="skill-tag">Canva</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <div class="exp-item">
+                <div class="item-header">
+                    <span>GPA & CGPA Calculator</span>
+                    <span><a href="https://cgpa-calc-aj.vercel.app/" target="_blank">Link</a></span>
+                </div>
+                <p class="item-desc">An intuitive tool for students to accurately calculate their Grade Point Averages,
+                    featuring a clean and user-friendly interface built with modern web standards.</p>
+            </div>
+            <div class="exp-item">
+                <div class="item-header">
+                    <span>MVK Transports Website</span>
+                    <span><a href="https://mvk-transports.vercel.app/" target="_blank">Link</a></span>
+                </div>
+                <p class="item-desc">A professional, multi-page business website designed for a transport company,
+                    featuring service details and contact information.</p>
+            </div>
+            <div class="exp-item">
+                <div class="item-header">
+                    <span>Personal Portfolio</span>
+                    <span>Current</span>
+                </div>
+                <p class="item-desc">A premium portfolio website featuring glassmorphism design, neon effects, and a
+                    comprehensive technical toolkit showcase.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <p>• Zayathon Hackathon Participant/Winner<br>• Advanced AI & Web Development Coursework</p>
+        </section>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">
+        <i class="fas fa-print"></i> Download as PDF
+    </button>
+</body>
+
+</html>
