@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects • AJ STUDIOS</title>
   <!-- 使用提供的favicon -->
-  <link rel="icon" href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192">
-  <link rel="icon" type="image/png" href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192">
-  <link rel="apple-touch-icon" href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192">
-  <link rel="preload" href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192" as="image">
-  <meta name="description" content="Explore a collection of web projects by Kamesh R (AJ STUDIOS), from educational tools to real-time applications." />
+  <link rel="icon"
+    href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192">
+  <link rel="icon" type="image/png"
+    href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192">
+  <link rel="apple-touch-icon"
+    href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192">
+  <link rel="preload"
+    href="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192"
+    as="image">
+  <meta name="description"
+    content="Explore a collection of web projects by Kamesh R (AJ STUDIOS), from educational tools to real-time applications." />
   <meta property="og:title" content="Projects • AJ STUDIOS" />
   <meta property="og:description" content="A collection of web projects by Kamesh R (AJ STUDIOS)." />
   <meta property="og:image" content="assets/social-preview.png" />
@@ -17,45 +24,108 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
   <style>
     :root {
-      --bg-color: #0d0d1a; --bg-secondary-color: #1c1c2b; --font-color: #e5e5e5;
-      --primary-color: #8A2BE2; --secondary-color: #4682B4; --card-bg-color: rgba(24, 24, 38, 0.6);
-      --shadow-color: rgba(0, 0, 0, 0.4); --border-color: rgba(255, 255, 255, 0.1); --nav-height: 70px;
-      --accent-color: #64ffda; --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      --bg-color: #0d0d1a;
+      --bg-secondary-color: #1c1c2b;
+      --font-color: #e5e5e5;
+      --primary-color: #8A2BE2;
+      --secondary-color: #4682B4;
+      --card-bg-color: rgba(24, 24, 38, 0.6);
+      --shadow-color: rgba(0, 0, 0, 0.4);
+      --border-color: rgba(255, 255, 255, 0.1);
+      --nav-height: 70px;
+      --accent-color: #64ffda;
+      --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
       --transition-speed: 0.3s;
     }
+
     [data-theme="light"] {
-      --bg-color: #f5f5f7; --bg-secondary-color: #ffffff; --font-color: #1d1d1f;
-      --primary-color: #7A28C2; --secondary-color: #007AFF; --card-bg-color: rgba(255, 255, 255, 0.6);
-      --shadow-color: rgba(0, 0, 0, 0.05); --border-color: rgba(0, 0, 0, 0.1);
+      --bg-color: #f5f5f7;
+      --bg-secondary-color: #ffffff;
+      --font-color: #1d1d1f;
+      --primary-color: #7A28C2;
+      --secondary-color: #007AFF;
+      --card-bg-color: rgba(255, 255, 255, 0.6);
+      --shadow-color: rgba(0, 0, 0, 0.05);
+      --border-color: rgba(0, 0, 0, 0.1);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--font-color);
-      transition: background-color 0.3s, color 0.3s; line-height: 1.7; font-size: 16px;
-      overflow-x: hidden; position: relative; animation: fadeIn 0.8s ease-in-out;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--font-color);
+      transition: background-color 0.3s, color 0.3s;
+      line-height: 1.7;
+      font-size: 16px;
+      overflow-x: hidden;
+      position: relative;
+      animation: fadeIn 0.8s ease-in-out;
     }
+
     body::before {
-        content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
-        background: radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.15), transparent 40%),
-                    radial-gradient(circle at 80% 70%, rgba(70, 130, 180, 0.15), transparent 40%);
-        animation: aurora 20s infinite linear;
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(70, 130, 180, 0.15), transparent 40%);
+      animation: aurora 20s infinite linear;
     }
-    [data-theme="light"]::before { display: none; }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes aurora { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    body.nav-open { 
-      overflow: hidden; 
+
+    [data-theme="light"]::before {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes aurora {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    body.nav-open {
+      overflow: hidden;
       position: fixed;
       width: 100%;
       height: 100%;
     }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-    
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
     /* Progress Bar */
     .progress-bar {
       position: fixed;
@@ -67,33 +137,114 @@
       z-index: 10000;
       transition: width 0.2s;
     }
-    
+
     /* === NAVBAR STRUCTURE === */
-    .navbar { position: sticky; top: 0; left: 0; width: 100%; background: rgba(13, 13, 26, 0.7); backdrop-filter: blur(12px); z-index: 1000; height: var(--nav-height); border-bottom: 1px solid var(--border-color); }
-    [data-theme="light"] .navbar { background: rgba(245, 245, 247, 0.7); }
-    .navbar-inner { display: flex; justify-content: space-between; align-items: center; height: 100%; }
-    .brand { display: flex; align-items: center; text-decoration: none; color: var(--font-color); }
-    .brand img { 
-      height: 40px; 
-      width: 40px; 
-      margin-right: 12px; 
+    .navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(13, 13, 26, 0.7);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      height: var(--nav-height);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    [data-theme="light"] .navbar {
+      background: rgba(245, 245, 247, 0.7);
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--font-color);
+    }
+
+    .brand img {
+      height: 40px;
+      width: 40px;
+      margin-right: 12px;
       border-radius: 50%;
       border: 2px solid var(--primary-color);
       box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
     }
-    .wordmark span { font-weight: 700; font-size: 1.2rem; }
-    .wordmark small { display: block; font-size: 0.7rem; opacity: 0.6; }
-    .nav-controls { display: flex; align-items: center; gap: 1rem; }
-    
+
+    .wordmark span {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .wordmark small {
+      display: block;
+      font-size: 0.7rem;
+      opacity: 0.6;
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
     /* DESKTOP NAV */
-    .navlinks-desktop { display: flex; align-items: center; gap: 25px; }
-    .navlinks-desktop a { color: var(--font-color); text-decoration: none; font-weight: 500; font-size: 0.95rem; padding: 8px 4px; position: relative; transition: opacity 0.3s; opacity: 0.8; }
-    .navlinks-desktop a:hover { opacity: 1; }
-    .navlinks-desktop a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--gradient); transform: scaleX(0); transform-origin: right; transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
-    .navlinks-desktop a:hover::after, .navlinks-desktop a.active::after { transform: scaleX(1); transform-origin: left; }
-    .navlinks-desktop a.active { opacity: 1; font-weight: 700; }
-    .hamburger-toggle { display: none; }
-    
+    .navlinks-desktop {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .navlinks-desktop a {
+      color: var(--font-color);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 8px 4px;
+      position: relative;
+      transition: opacity 0.3s;
+      opacity: 0.8;
+    }
+
+    .navlinks-desktop a:hover {
+      opacity: 1;
+    }
+
+    .navlinks-desktop a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .navlinks-desktop a:hover::after,
+    .navlinks-desktop a.active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .navlinks-desktop a.active {
+      opacity: 1;
+      font-weight: 700;
+    }
+
+    .hamburger-toggle {
+      display: none;
+    }
+
     /* Mobile Navigation Styles */
     .navlinks-mobile {
       display: flex;
@@ -117,14 +268,14 @@
       pointer-events: none;
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
     }
-    
+
     /* Active state for mobile nav */
     .navlinks-mobile.active {
       opacity: 1;
       transform: translateX(0);
       pointer-events: auto;
     }
-    
+
     /* Close Button Styles */
     .close-btn {
       position: absolute;
@@ -144,13 +295,13 @@
       justify-content: center;
       border-radius: 50%;
     }
-    
+
     .close-btn:hover {
       transform: rotate(90deg);
       color: var(--primary-color);
       background: rgba(255, 255, 255, 0.1);
     }
-    
+
     /* Navigation Links */
     .navlinks-mobile a {
       color: white;
@@ -165,25 +316,25 @@
       width: 80%;
       justify-content: flex-start;
     }
-    
+
     .navlinks-mobile a:hover {
       transform: translateX(-10px);
       color: var(--primary-color);
       background: rgba(255, 255, 255, 0.05);
     }
-    
+
     .navlinks-mobile a.active {
       color: var(--accent-color);
       font-weight: bold;
       background: rgba(100, 255, 218, 0.1);
     }
-    
+
     .navlinks-mobile i {
       font-size: 24px;
       width: 30px;
       text-align: center;
     }
-    
+
     /* Hamburger Menu Icon */
     .hamburger-toggle {
       position: relative;
@@ -201,34 +352,34 @@
       border-radius: 8px;
       transition: background 0.3s, transform 0.3s;
     }
-    
+
     .hamburger-toggle:hover {
       background: rgba(255, 255, 255, 0.1);
     }
-    
+
     .hamburger-toggle.active {
       transform: rotate(90deg);
     }
-    
+
     /* Theme Toggle Button */
     .toggle {
-      background: var(--bg-secondary-color); 
-      border: 1px solid var(--border-color); 
+      background: var(--bg-secondary-color);
+      border: 1px solid var(--border-color);
       border-radius: 50px;
-      cursor: pointer; 
-      font-size: 1rem; 
-      padding: 8px; 
-      display: flex; 
-      align-items: center; 
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 8px;
+      display: flex;
+      align-items: center;
       justify-content: center;
       transition: transform 0.2s, box-shadow 0.3s;
     }
-    
-    .toggle:hover { 
-      transform: scale(1.1); 
-      box-shadow: 0 0 12px var(--primary-color); 
+
+    .toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 12px var(--primary-color);
     }
-    
+
     /* Body overlay when nav is open */
     body.nav-open::before {
       content: '';
@@ -242,13 +393,13 @@
       opacity: 0;
       animation: fadeIn 0.3s forwards;
     }
-    
+
     /* Hero Section */
     .hero {
       padding: 100px 0;
       text-align: center;
     }
-    
+
     .badge {
       display: inline-block;
       padding: 8px 16px;
@@ -259,7 +410,7 @@
       margin-bottom: 20px;
       font-size: 0.9rem;
     }
-    
+
     h1 {
       font-size: 3.5rem;
       font-weight: 800;
@@ -270,14 +421,14 @@
       color: transparent;
       line-height: 1.2;
     }
-    
+
     .lead {
       font-size: 1.3rem;
       max-width: 700px;
       margin: 0 auto 30px;
       opacity: 0.9;
     }
-    
+
     /* Filter Buttons */
     .filter-container {
       display: flex;
@@ -286,7 +437,7 @@
       gap: 12px;
       margin-bottom: 40px;
     }
-    
+
     .filter-btn {
       background: var(--bg-secondary-color);
       border: 1px solid var(--border-color);
@@ -300,7 +451,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .filter-btn::before {
       content: '';
       position: absolute;
@@ -313,28 +464,28 @@
       transition: opacity var(--transition-speed);
       z-index: -1;
     }
-    
+
     .filter-btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 5px 15px var(--shadow-color);
     }
-    
+
     .filter-btn.active {
       color: white;
       border-color: transparent;
     }
-    
+
     .filter-btn.active::before {
       opacity: 1;
     }
-    
+
     /* Search Bar */
     .search-container {
       max-width: 500px;
       margin: 0 auto 40px;
       position: relative;
     }
-    
+
     .search-input {
       width: 100%;
       padding: 12px 45px 12px 20px;
@@ -345,13 +496,13 @@
       font-size: 1rem;
       transition: all var(--transition-speed);
     }
-    
+
     .search-input:focus {
       outline: none;
       border-color: var(--primary-color);
       box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
     }
-    
+
     .search-btn {
       position: absolute;
       right: 5px;
@@ -369,12 +520,12 @@
       cursor: pointer;
       transition: all var(--transition-speed);
     }
-    
+
     .search-btn:hover {
       background: var(--secondary-color);
       transform: translateY(-50%) scale(1.1);
     }
-    
+
     /* Section Styles */
     .section-title {
       font-size: 2.5rem;
@@ -384,7 +535,7 @@
       position: relative;
       padding-bottom: 15px;
     }
-    
+
     .section-title::after {
       content: '';
       position: absolute;
@@ -396,86 +547,79 @@
       background: var(--gradient);
       border-radius: 2px;
     }
-    
+
     /* Grid Layout */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
-    
+
     /* Project Card Styles with RGB Glow */
     .project-card {
       display: flex;
       flex-direction: column;
       background: var(--card-bg-color);
       border: 1px solid var(--border-color);
-      border-radius: 16px;
+      border-radius: 12px;
       padding: 0;
       text-decoration: none;
       color: var(--font-color);
-      transition: transform 0.4s, box-shadow 0.4s, border-color 0.3s;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       position: relative;
       overflow: hidden;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
-    
+
     .project-card-image {
       width: 100%;
-      height: 200px;
+      height: 160px;
       object-fit: cover;
-      border-radius: 16px 16px 0 0;
+      border-radius: 12px 12px 0 0;
       transition: transform 0.3s;
     }
-    
+
     .project-card:hover .project-card-image {
       transform: scale(1.05);
     }
-    
+
     .project-card-content {
-      padding: 25px;
+      padding: 18px;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
-    
+
     /* RGB Glow Animation */
     .project-card {
-      animation: rgbGlow 4s infinite alternate;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
-    
-    @keyframes rgbGlow {
-      0% {
-        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7),
-                    0 0 25px rgba(255, 0, 0, 0.5),
-                    0 0 35px rgba(255, 0, 0, 0.3);
-        border-color: rgba(255, 0, 0, 0.5);
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary-color);
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+      color: white;
+    }
+
+    /* Subtle RGB border animation on hover */
+    .project-card:hover {
+      animation: neonPulse 2s infinite alternate;
+    }
+
+    @keyframes neonPulse {
+      from {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
       }
-      25% {
-        box-shadow: 0 0 15px rgba(0, 255, 0, 0.7),
-                    0 0 25px rgba(0, 255, 0, 0.5),
-                    0 0 35px rgba(0, 255, 0, 0.3);
-        border-color: rgba(0, 255, 0, 0.5);
-      }
-      50% {
-        box-shadow: 0 0 15px rgba(0, 0, 255, 0.7),
-                    0 0 25px rgba(0, 0, 255, 0.5),
-                    0 0 35px rgba(0, 0, 255, 0.3);
-        border-color: rgba(0, 0, 255, 0.5);
-      }
-      75% {
-        box-shadow: 0 0 15px rgba(255, 255, 0, 0.7),
-                    0 0 25px rgba(255, 255, 0, 0.5),
-                    0 0 35px rgba(255, 255, 0, 0.3);
-        border-color: rgba(255, 255, 0, 0.5);
-      }
-      100% {
-        box-shadow: 0 0 15px rgba(255, 0, 255, 0.7),
-                    0 0 25px rgba(255, 0, 255, 0.5),
-                    0 0 35px rgba(255, 0, 255, 0.3);
-        border-color: rgba(255, 0, 255, 0.5);
+
+      to {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
       }
     }
-    
+
     .project-card::before {
       content: '';
       position: absolute;
@@ -488,18 +632,11 @@
       z-index: -1;
       transition: opacity 0.3s;
     }
-    
-    .project-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px var(--shadow-color);
-      border-color: var(--primary-color);
-      color: white;
-    }
-    
+
     .project-card:hover::before {
       opacity: 0.1;
     }
-    
+
     .project-card .thumb {
       display: inline-block;
       padding: 6px 12px;
@@ -511,56 +648,63 @@
       margin-bottom: 12px;
       transition: color 0.3s, background 0.3s;
     }
-    
+
     .project-card:hover .thumb {
       background: rgba(255, 255, 255, 0.2);
       color: white;
     }
-    
+
     .project-card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 12px;
+      font-size: 1.25rem;
+      margin-bottom: 10px;
       font-weight: 700;
       transition: color 0.3s;
     }
-    
+
     .project-card:hover h3 {
       color: var(--accent-color);
     }
-    
+
     .project-card p {
+      font-size: 0.9rem;
       margin-bottom: 16px;
       opacity: 0.8;
       transition: opacity 0.3s;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    
+
     .project-card:hover p {
       opacity: 1;
     }
-    
+
     .project-card .tech-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 16px;
     }
-    
+
     .project-card .tech-tag {
       display: inline-block;
-      padding: 4px 10px;
-      border-radius: 4px;
-      background: rgba(70, 130, 180, 0.2);
-      color: var(--secondary-color);
-      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 50px;
+      background: rgba(138, 43, 226, 0.1);
+      border: 1px solid rgba(138, 43, 226, 0.2);
+      color: var(--font-color);
+      font-size: 0.7rem;
       font-weight: 500;
-      transition: background 0.3s, color 0.3s;
+      transition: all 0.3s;
     }
-    
+
     .project-card:hover .tech-tag {
-      background: rgba(255, 255, 255, 0.2);
+      background: var(--primary-color);
+      border-color: transparent;
       color: white;
     }
-    
+
     .project-card .view-project {
       display: inline-block;
       margin-top: 16px;
@@ -573,12 +717,12 @@
       transition: transform 0.3s, box-shadow 0.3s;
       text-align: center;
     }
-    
+
     .project-card .view-project:hover {
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
-    
+
     /* Project Modal */
     .modal {
       display: none;
@@ -597,12 +741,12 @@
       opacity: 0;
       transition: opacity var(--transition-speed);
     }
-    
+
     .modal.active {
       display: flex;
       opacity: 1;
     }
-    
+
     .modal-content {
       background: var(--bg-secondary-color);
       border-radius: 16px;
@@ -615,11 +759,11 @@
       transition: transform var(--transition-speed);
       border: 1px solid var(--border-color);
     }
-    
+
     .modal.active .modal-content {
       transform: scale(1);
     }
-    
+
     .modal-header {
       padding: 20px;
       border-bottom: 1px solid var(--border-color);
@@ -627,7 +771,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    
+
     .modal-title {
       font-size: 1.8rem;
       font-weight: 700;
@@ -636,7 +780,7 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    
+
     .modal-close {
       background: none;
       border: none;
@@ -651,33 +795,33 @@
       align-items: center;
       justify-content: center;
     }
-    
+
     .modal-close:hover {
       transform: rotate(90deg);
       background: var(--primary-color);
     }
-    
+
     .modal-body {
       padding: 20px;
     }
-    
+
     .modal-project-info {
       margin-bottom: 20px;
     }
-    
+
     .modal-project-info h3 {
       margin-bottom: 10px;
       font-size: 1.2rem;
       color: var(--primary-color);
     }
-    
+
     .modal-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 15px;
     }
-    
+
     .tag {
       background: rgba(138, 43, 226, 0.2);
       color: var(--primary-color);
@@ -687,34 +831,52 @@
       font-weight: 500;
       transition: all var(--transition-speed);
     }
-    
+
     .tag:hover {
       background: var(--primary-color);
       color: white;
       transform: translateY(-2px);
     }
-    
+
     /* Footer Enhancements */
-    footer { text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-color); margin-top: 60px; }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    .social-icons { display: flex; gap: 15px; }
-    .social-icons a { 
-      display: flex; 
-      align-items: center; 
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid var(--border-color);
+      margin-top: 60px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
       justify-content: center;
-      width: 40px; 
-      height: 40px; 
-      border-radius: 50%; 
-      background: var(--card-bg-color); 
-      color: var(--font-color); 
-      transition: transform 0.3s, background 0.3s; 
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--card-bg-color);
+      color: var(--font-color);
+      transition: transform 0.3s, background 0.3s;
     }
-    .social-icons a:hover { 
-      transform: translateY(-5px) rotate(15deg); 
-      background: var(--gradient); 
-      color: white; 
+
+    .social-icons a:hover {
+      transform: translateY(-5px) rotate(15deg);
+      background: var(--gradient);
+      color: white;
     }
-    
+
     /* Back to Top Button */
     .back-to-top {
       position: fixed;
@@ -735,49 +897,68 @@
       z-index: 999;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
+
     .back-to-top.visible {
       opacity: 1;
       visibility: visible;
     }
+
     .back-to-top:hover {
       transform: translateY(-5px) rotate(15deg);
     }
-    
+
     /* Reveal Animation */
-    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     /* Responsive Styles */
     @media (max-width: 850px) {
-      .navlinks-desktop { display: none; }
-      .hamburger-toggle { display: flex; }
-      .footer-inner { flex-direction: column; gap: 1.5rem; }
-      
+      .navlinks-desktop {
+        display: none;
+      }
+
+      .hamburger-toggle {
+        display: flex;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
       /* Adjust mobile menu for smaller screens */
       .navlinks-mobile {
         width: 85%;
       }
-      
+
       .navlinks-mobile a {
         font-size: 20px;
       }
-      
+
       h1 {
         font-size: 2.8rem;
       }
     }
-    
+
     @media (max-width: 480px) {
       .navlinks-mobile {
         width: 100%;
         max-width: 100%;
       }
-      
+
       .navlinks-mobile a {
         font-size: 18px;
         width: 90%;
       }
-      
+
       .close-btn {
         top: 15px;
         right: 15px;
@@ -785,42 +966,47 @@
         height: 40px;
         font-size: 24px;
       }
-      
+
       .grid {
         grid-template-columns: 1fr;
       }
-      
+
       h1 {
         font-size: 2.2rem;
       }
-      
+
       .section-title {
         font-size: 2rem;
       }
     }
-    
+
     /* Print Styles */
     @media print {
-      .navbar, .hamburger, .toggle, .progress-bar, .back-to-top {
+
+      .navbar,
+      .hamburger,
+      .toggle,
+      .progress-bar,
+      .back-to-top {
         display: none !important;
       }
-      
+
       body {
         color: black;
         background: white;
         font-size: 12pt;
       }
-      
+
       .project-card {
         break-inside: avoid;
         border: 1px solid #ddd;
       }
-      
+
       a {
         text-decoration: none;
         color: black;
       }
-      
+
       a::after {
         content: " (" attr(href) ")";
         font-size: 90%;
@@ -828,6 +1014,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="progress-bar"></div>
   <a href="#main-content" class="skip-to-content"></a>
@@ -835,7 +1022,9 @@
     <div class="container navbar-inner">
       <a href="index.html" class="brand">
         <!-- 使用favicon作为logo -->
-        <img src="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192" alt="AJ STUDIOS Logo" loading="lazy" onerror="this.style.display='none'">
+        <img
+          src="https://z-cdn-media.chatglm.cn/files/8f17050e-c397-482c-862b-632e26cb3191_pasted_image_1759505799564.jpg?auth_key=1791041897-ed8cd9b14d1a4d9cbcec62f20e50b779-0-8db20ad0edfc1d6e96945c35f3076192"
+          alt="AJ STUDIOS Logo" loading="lazy" onerror="this.style.display='none'">
         <div class="wordmark"><span>AJ STUDIOS</span><small>KAMESH&nbsp;R</small></div>
       </a>
       <div class="navlinks-desktop">
@@ -846,21 +1035,22 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav-controls">
-          <button class="toggle" aria-label="Toggle theme">☀️/🌙</button>
-          <button class="hamburger hamburger-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navlinks-mobile">
-            <i class="fa-solid fa-bars"></i>
-          </button>   
+        <button class="toggle" aria-label="Toggle theme">☀️/🌙</button>
+        <button class="hamburger hamburger-toggle" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="navlinks-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
   </nav>
-  
+
   <!-- Mobile Navigation Menu -->
   <div class="navlinks-mobile" id="navlinks-mobile">
     <!-- Close Button -->
     <button class="close-btn" aria-label="Close navigation menu">
       <i class="fa-solid fa-xmark"></i>
     </button>
-    
+
     <!-- Navigation Links -->
     <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
     <a href="projects.html" class="active"><i class="fa-solid fa-layer-group"></i>Projects</a>
@@ -868,13 +1058,14 @@
     <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
     <a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a>
   </div>
-  
+
   <main id="main-content">
     <header class="hero container">
       <span class="badge reveal">🚀 MY PROJECTS</span>
       <h1 class="reveal">Project Archive</h1>
-      <p class="lead reveal">A curated collection of my work. Each project represents a challenge I was excited to solve and a story of growth.</p>
-      
+      <p class="lead reveal">A curated collection of my work. Each project represents a challenge I was excited to solve
+        and a story of growth.</p>
+
       <!-- SEARCH BAR -->
       <div class="search-container reveal">
         <input type="text" class="search-input" id="search-input" placeholder="Search projects...">
@@ -882,7 +1073,7 @@
           <i class="fa-solid fa-search"></i>
         </button>
       </div>
-      
+
       <!-- FILTER BUTTONS -->
       <div class="filter-container reveal">
         <button class="filter-btn active" data-filter="all">All Projects</button>
@@ -892,10 +1083,9 @@
         <button class="filter-btn" data-filter="Business">Business</button>
         <button class="filter-btn" data-filter="Web Tool">Web Tool</button>
         <button class="filter-btn" data-filter="Entertainment">Entertainment</button>
-        <button class="filter-btn" data-filter="Geolocation">Geolocation</button>
       </div>
     </header>
-    
+
     <section class="container">
       <h2 class="section-title reveal">All Projects</h2>
       <div id="projects-grid" class="grid">
@@ -903,7 +1093,7 @@
       </div>
     </section>
   </main>
-  
+
   <!-- PROJECT MODAL -->
   <div class="modal" id="project-modal">
     <div class="modal-content">
@@ -933,7 +1123,7 @@
       </div>
     </div>
   </div>
-  
+
   <footer>
     <div class="container footer-inner">
       <div class="small">© <span id="year"></span> AJ STUDIOS • Designed & Developed with ❤️ by Kamesh R</div>
@@ -950,177 +1140,97 @@
       </div>
     </div>
   </footer>
-  
+
   <div class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
   </div>
-  
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // PROJECTS DATA
       const PROJECTS = [
-        { 
-          category: "Education", 
-          title: "GPA & CGPA Calculator", 
-          description: "An intuitive tool for students to accurately calculate their Grade Point Averages, featuring a clean and user-friendly interface.", 
+        {
+          category: "Education",
+          title: "GPA & CGPA Calculator",
+          description: "An intuitive tool for students to accurately calculate their Grade Point Averages, featuring a clean and user-friendly interface.",
           link: "https://cgpa-calc-aj.vercel.app/",
           tags: ["HTML", "CSS", "JavaScript", "Education"],
           image: "https://via.placeholder.com/400x200/8A2BE2/ffffff?text=GPA+Calculator"
         },
-        { 
-          category: "Geolocation", 
-          title: "Location Tracking Website", 
-          description: "A web application that demonstrates real-time location fetching, built to explore and implement geolocation browser APIs.", 
-          link: "https://cgpa-calc-location-fetch.vercel.app/",
-          tags: ["HTML", "CSS", "JavaScript", "Geolocation API"],
-          image: "https://via.placeholder.com/400x200/4682B4/ffffff?text=Location+Tracker"
-        },
-        { 
-          category: "Business", 
-          title: "MVK Transports Website", 
-          description: "A professional, multi-page business website designed for a transport company, featuring service details and contact information.", 
+        {
+          category: "Business",
+          title: "MVK Transports Website",
+          description: "A professional, multi-page business website designed for a transport company, featuring service details and contact information.",
           link: "https://mvk-transports.vercel.app/",
           tags: ["HTML", "CSS", "JavaScript", "Business", "Multi-page"],
           image: "mvk-transports-vercel-app-1024x768desktop-0c37c6 (1).png"
         },
-        { 
-          category: "Entertainment", 
-          title: "MusiQ Player", 
-          description: "A sleek and functional music player interface, allowing users to play and control audio directly in their browser.", 
-          link: "https://aj-musiq-factory.vercel.app/",
-          tags: ["HTML", "CSS", "JavaScript", "Audio API", "Entertainment"],
-          image: "https://via.placeholder.com/400x200/FF6B6B/ffffff?text=MusiQ+Player"
-        },
-        { 
-          category: "Web Tool", 
-          title: "Age Calculator", 
-          description: "A simple yet effective utility that calculates a user's precise age based on their date of birth.", 
+        {
+          category: "Web Tool",
+          title: "Age Calculator",
+          description: "A simple yet effective utility that calculates a user's precise age based on their date of birth.",
           link: "https://kamesh14151.github.io/AJ-COMPANY/",
           tags: ["HTML", "CSS", "JavaScript", "Utility", "Web Tool"],
           image: "https://via.placeholder.com/400x200/64ffda/000000?text=Age+Calculator"
         },
-        { 
-          category: "AI Tool", 
-          title: "NexaRiq", 
-          description: "An advanced AI-powered platform designed to revolutionize the way we interact with artificial intelligence in our daily tasks.", 
-          link: "https://nexariq.ajstudioz.co.in/",
-          tags: ["AI", "Web Application", "JavaScript", "React", "Node.js"],
-          image: "https://via.placeholder.com/400x200/8A2BE2/ffffff?text=NexaRiq"
-        },
-        { 
-          category: "Development Tool", 
-          title: "NexaRiq Agentic Code Editor", 
-          description: "A next-generation code editor integrated with AI agents to assist developers in writing, debugging, and optimizing code.", 
-          link: "https://nexariq-agentic-code-editor.vercel.app/",
-          tags: ["Code Editor", "AI", "JavaScript", "React", "Development Tool"],
-          image: "https://via.placeholder.com/400x200/FF6B6B/ffffff?text=Agentic+Editor"
-        },
-        { 
-          category: "AI Tool", 
-          title: "TOMO Vibecoding Tool", 
-          description: "AI-powered code editor that builds websites in seconds with multi-page support, auto-deployment, free hosting, and open-source AI models.", 
-          link: "https://dev-aj-tool.vercel.app/",
-          tags: ["AI", "Code Editor", "React", "Next.js", "Llama"],
-          image: "dev-aj-tool-vercel-app-1024x768desktop-acda78.png"
-        },
-        { 
-          category: "AI Tool", 
-          title: "TOMO Bot - AI Email Assistant", 
-          description: "AI assistant that helps compose, send, and manage professional emails efficiently with intelligent commands.", 
-          link: "https://workflow-one-gamma.vercel.app/",
-          tags: ["AI", "Email", "Productivity", "JavaScript"],
-          image: "workflow-one-gamma-vercel-app-1024x768desktop-f1ea93.png"
-        },
-        { 
-          category: "AI Tool", 
-          title: "TOMO - AI-Powered Chat", 
-          description: "Advanced AI chat assistant featuring intelligent tools, voice chat, image generation, and real-time search.", 
+        {
+          category: "AI Tool",
+          title: "TOMO - AI-Powered Chat",
+          description: "Advanced AI chat assistant featuring intelligent tools, voice chat, image generation, and real-time search.",
           link: "https://chat.tomoacademy.site",
           tags: ["AI", "Chat", "Voice", "Image Generation", "Search"],
           image: "tomo-chat-web.jpeg"
         },
-        { 
-          category: "AI Tool", 
-          title: "Morphic - AI Research Tool", 
-          description: "User-friendly AI platform for interactive exploration with model selection, deep dive analysis, and real-time search.", 
-          link: "https://epdi.vercel.app",
-          tags: ["AI", "Research", "DeepSeek", "Search"],
-          image: "epdi-vercel-app-1024x768desktop-dd33ea.png"
-        },
-        { 
-          category: "Development Tool", 
-          title: "AJ STUDIOZ Internal Dev Tool", 
-          description: "AI-powered tool for generating React components and interfaces using natural language with multiple AI models.", 
-          link: "https://v0-clone-eight-chi.vercel.app/",
-          tags: ["AI", "React", "v0", "Claude", "Grok", "DeepSeek"],
-          image: "v0-clone-eight-chi-vercel-app-1024x768desktop-269994.png"
-        },
-        { 
-          category: "AI Tool", 
-          title: "AJ STUDIOZ AI Search Engine", 
-          description: "Intelligent AI research companion delivering fast, accurate search tailored for comprehensive research requirements.", 
+        {
+          category: "AI Tool",
+          title: "AJ STUDIOZ AI Search Engine",
+          description: "Intelligent AI research companion delivering fast, accurate search tailored for comprehensive research requirements.",
           link: "https://www.meow.ajstudioz.co.in/",
           tags: ["AI", "Search", "Research"],
           image: "meow-ajstudioz-co-in-1024x768desktop-052090 (1).png"
         },
-        { 
-          category: "Education", 
-          title: "TOMO ACADEMY Website", 
-          description: "Beginner-friendly educational platform with free C programming, statistics, and data visualization tutorials in Tamil and English.", 
+        {
+          category: "Education",
+          title: "TOMO ACADEMY Website",
+          description: "Beginner-friendly educational platform with free C programming, statistics, and data visualization tutorials in Tamil and English.",
           link: "https://tomoacademy.site",
           tags: ["Education", "C Programming", "Statistics", "Tamil", "Videos"],
           image: "tomo-academy-gb8o-vercel-app-1024x768desktop-c714b6.png"
         },
-        { 
-          category: "Development Tool", 
-          title: "cURL Tester", 
-          description: "Professional online tool for testing and debugging API requests with cURL commands, request history, and response viewing.", 
+        {
+          category: "Development Tool",
+          title: "cURL Tester",
+          description: "Professional online tool for testing and debugging API requests with cURL commands, request history, and response viewing.",
           link: "https://curl.ajstudioz.co.in",
           tags: ["API", "Testing", "cURL", "Developer Tool"],
           image: "v0-aj-studioz-curl-tester-vercel-app-1024x768desktop-d5d1b9.png"
         },
-        { 
-          category: "AI Tool", 
-          title: "MEOW CHAT - AI Chat Platform", 
-          description: "Free AI chat with multiple models for summaries, code generation, design, research, and deep thinking conversations.", 
+        {
+          category: "AI Tool",
+          title: "MEOW CHAT - AI Chat Platform",
+          description: "Free AI chat with multiple models for summaries, code generation, design, research, and deep thinking conversations.",
           link: "https://www.meowchat.ajstudioz.co.in/",
           tags: ["AI", "Chat", "Code", "Design", "Research"],
           image: "meowchat-ajstudioz-co-in-1024x768desktop-ebe418.png"
         },
-        { 
-          category: "Business", 
-          title: "TOMO BUSINESS - Digital Cards", 
-          description: "Modern networking tool for creating premium digital profiles with NFC sharing, custom domains, and real-time analytics.", 
+        {
+          category: "Business",
+          title: "TOMO BUSINESS - Digital Cards",
+          description: "Modern networking tool for creating premium digital profiles with NFC sharing, custom domains, and real-time analytics.",
           link: "https://tomo-business.vercel.app/",
           tags: ["NFC", "Digital Card", "Business", "QR", "Networking"],
           image: "tomo-business-vercel-app-1024x768desktop-4a9161.png"
         },
-        { 
-          category: "Web Tool", 
-          title: "TOMO MEOW - Document Formatter", 
-          description: "Professional document formatter converting plain text or Markdown to styled documents with PDF/DOCX export.", 
+        {
+          category: "Web Tool",
+          title: "TOMO MEOW - Document Formatter",
+          description: "Professional document formatter converting plain text or Markdown to styled documents with PDF/DOCX export.",
           link: "https://doc.tomoacademy.site/",
           tags: ["Markdown", "PDF", "DOCX", "Formatting", "Documents"],
           image: "tomo-meow-studio-vercel-app-1024x768desktop-478946.png"
-        },
-        { 
-          category: "Web Tool", 
-          title: "AJ STORAGE - File Storage", 
-          description: "File storage system with instant QR code generation for easy sharing and secure access to uploaded files.", 
-          link: "https://cloud-zeta-snowy.vercel.app/",
-          tags: ["File Storage", "QR Code", "Cloud", "Sharing"],
-          image: "cloud-zeta-snowy-vercel-app-1024x768desktop-650d42.png"
-        },
-        { 
-          category: "AI Tool", 
-          title: "AJ STUDIOZ CHAT", 
-          description: "AI chat platform with Lynxa models: Lite for fast responses, Pro for coding, and Student Pro for document processing.", 
-          link: "https://chat.ajstudioz.co.in/",
-          tags: ["AI", "Chat", "Lynxa", "PDF", "Coding", "Export"],
-          image: "chat-ajstudioz-co-in-1024x768desktop-217e5d.png"
         }
       ];
-      
+
       // DOM ELEMENTS
       const projectsGrid = document.getElementById('projects-grid');
       const modal = document.getElementById('project-modal');
@@ -1132,13 +1242,13 @@
       const searchInput = document.getElementById('search-input');
       const searchBtn = document.getElementById('search-btn');
       const filterBtns = document.querySelectorAll('.filter-btn');
-      
+
       // THEME TOGGLE LOGIC
       const themeToggleButton = document.querySelector('.toggle');
-      if(themeToggleButton) {
+      if (themeToggleButton) {
         const currentTheme = localStorage.getItem('theme');
         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
+
         // Set initial theme
         if (currentTheme) {
           document.documentElement.setAttribute('data-theme', currentTheme);
@@ -1146,13 +1256,13 @@
           document.documentElement.setAttribute('data-theme', 'dark');
           localStorage.setItem('theme', 'dark');
         }
-        
+
         themeToggleButton.addEventListener('click', () => {
           let newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
           document.documentElement.setAttribute('data-theme', newTheme);
           localStorage.setItem('theme', newTheme);
         });
-        
+
         // Listen for system theme changes
         prefersDarkScheme.addEventListener('change', (e) => {
           if (!localStorage.getItem('theme')) {
@@ -1161,22 +1271,22 @@
           }
         });
       }
-      
+
       // Mobile Navigation Logic
       const hamburger = document.querySelector('.hamburger-toggle');
       const mobileNav = document.getElementById('navlinks-mobile');
       const hamburgerIcon = hamburger.querySelector('i');
       const closeBtn = document.querySelector('.close-btn');
-      
+
       // Store scroll position when opening menu
       let scrollPosition = 0;
-      
+
       // Toggle mobile menu
       hamburger.addEventListener('click', () => {
         const isActive = mobileNav.classList.toggle('active');
         hamburger.classList.toggle('active');
         hamburger.setAttribute('aria-expanded', isActive);
-        
+
         if (isActive) {
           // Store current scroll position
           scrollPosition = window.pageYOffset;
@@ -1193,7 +1303,7 @@
           hamburgerIcon.className = 'fa-solid fa-bars';
         }
       });
-      
+
       // Close mobile menu when close button is clicked
       closeBtn.addEventListener('click', () => {
         mobileNav.classList.remove('active');
@@ -1203,7 +1313,7 @@
         hamburgerIcon.className = 'fa-solid fa-bars';
         hamburger.setAttribute('aria-expanded', 'false');
       });
-      
+
       // Close mobile menu when a link is clicked
       mobileNav.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
@@ -1215,12 +1325,12 @@
           hamburger.setAttribute('aria-expanded', 'false');
         });
       });
-      
+
       // Close mobile menu when clicking outside
       document.addEventListener('click', (e) => {
-        if (mobileNav.classList.contains('active') && 
-            !mobileNav.contains(e.target) && 
-            !hamburger.contains(e.target)) {
+        if (mobileNav.classList.contains('active') &&
+          !mobileNav.contains(e.target) &&
+          !hamburger.contains(e.target)) {
           mobileNav.classList.remove('active');
           hamburger.classList.remove('active');
           document.body.classList.remove('nav-open');
@@ -1229,23 +1339,23 @@
           hamburger.setAttribute('aria-expanded', 'false');
         }
       });
-      
+
       // RENDER PROJECTS
       function renderProjects(projectsToRender = PROJECTS) {
         projectsGrid.innerHTML = '';
-        
+
         if (projectsToRender.length === 0) {
           projectsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; opacity: 0.7;">No projects found matching your criteria.</p>';
           return;
         }
-        
+
         projectsToRender.forEach((project, i) => {
           const card = document.createElement('div');
           card.className = "project-card reveal";
-          
+
           // Determine image source
           const imageSrc = project.image || 'https://via.placeholder.com/400x200/8A2BE2/ffffff?text=' + encodeURIComponent(project.title);
-          
+
           card.innerHTML = `
             <img src="${imageSrc}" alt="${project.title}" class="project-card-image" loading="lazy" onerror="this.src='https://via.placeholder.com/400x200/8A2BE2/ffffff?text=Project+Image'">
             <div class="project-card-content">
@@ -1263,10 +1373,10 @@
           card.style.transitionDelay = `${i * 0.1}s`;
           projectsGrid.appendChild(card);
         });
-        
+
         // Re-observe new elements
         observeRevealElements();
-        
+
         // Add event listeners to view project buttons
         document.querySelectorAll('.view-project').forEach(btn => {
           btn.addEventListener('click', (e) => {
@@ -1276,7 +1386,7 @@
             window.open(link, '_blank', 'noopener');
           });
         });
-        
+
         // 添加项目卡片点击事件（用于打开模态框）
         document.querySelectorAll('.project-card').forEach((card, index) => {
           card.addEventListener('click', (e) => {
@@ -1289,18 +1399,18 @@
           });
         });
       }
-      
+
       // INITIAL RENDER
       renderProjects();
-      
+
       // PROJECT MODAL
       function openProjectModal(index) {
         const project = PROJECTS[index];
-        
+
         modalTitle.textContent = project.title;
         modalDescription.textContent = project.description;
         modalLink.href = project.link;
-        
+
         // Clear and populate tags
         modalTags.innerHTML = '';
         project.tags.forEach(tag => {
@@ -1309,84 +1419,84 @@
           tagElement.textContent = tag;
           modalTags.appendChild(tagElement);
         });
-        
+
         // Show modal
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
-      
+
       function closeProjectModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
       }
-      
+
       modalClose.addEventListener('click', closeProjectModal);
-      
+
       // Close modal when clicking outside
       modal.addEventListener('click', (e) => {
         if (e.target === modal) {
           closeProjectModal();
         }
       });
-      
+
       // SEARCH FUNCTIONALITY
       function searchProjects() {
         const searchTerm = searchInput.value.toLowerCase().trim();
-        
+
         if (searchTerm === '') {
           renderProjects();
           return;
         }
-        
-        const filteredProjects = PROJECTS.filter(project => 
-          project.title.toLowerCase().includes(searchTerm) || 
+
+        const filteredProjects = PROJECTS.filter(project =>
+          project.title.toLowerCase().includes(searchTerm) ||
           project.description.toLowerCase().includes(searchTerm) ||
           project.category.toLowerCase().includes(searchTerm) ||
           project.tags.some(tag => tag.toLowerCase().includes(searchTerm))
         );
-        
+
         renderProjects(filteredProjects);
       }
-      
+
       searchBtn.addEventListener('click', searchProjects);
       searchInput.addEventListener('keyup', (e) => {
         if (e.key === 'Enter') {
           searchProjects();
         }
       });
-      
+
       // FILTER FUNCTIONALITY
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           // Update active button
           filterBtns.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-          
+
           // Filter projects
           const filter = btn.getAttribute('data-filter');
-          
+
           if (filter === 'all') {
             renderProjects();
           } else {
-            const filteredProjects = PROJECTS.filter(project => 
+            const filteredProjects = PROJECTS.filter(project =>
               project.category === filter
             );
             renderProjects(filteredProjects);
           }
         });
       });
-      
+
       // YEAR UPDATE
       const yearSpan = document.getElementById('year');
       if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-      
+
       // SCROLL PROGRESS BAR
       window.addEventListener('scroll', () => {
         const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPosition = window.scrollY;
         const scrollPercentage = (scrollPosition / scrollHeight) * 100;
         document.querySelector('.progress-bar').style.width = `${scrollPercentage}%`;
-        
+
         // Back to top button visibility
         const backToTop = document.getElementById('backToTop');
         if (scrollPosition > 300) {
@@ -1395,7 +1505,7 @@
           backToTop.classList.remove('visible');
         }
       });
-      
+
       // BACK TO TOP BUTTON
       const backToTop = document.getElementById('backToTop');
       backToTop.addEventListener('click', () => {
@@ -1404,11 +1514,11 @@
           behavior: 'smooth'
         });
       });
-      
+
       // SCROLL REVEAL ANIMATION
       function observeRevealElements() {
         const revealElements = document.querySelectorAll('.reveal');
-        
+
         const revealObserver = new IntersectionObserver((entries, observer) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1417,14 +1527,14 @@
             }
           });
         }, { threshold: 0.1 });
-        
+
         revealElements.forEach(elem => {
           revealObserver.observe(elem);
         });
       }
-      
+
       observeRevealElements();
-      
+
       // PREVENT MODAL CONTENT FROM CLOSING MODAL
       document.querySelector('.modal-content').addEventListener('click', (e) => {
         e.stopPropagation();
@@ -1432,4 +1542,5 @@
     });
   </script>
 </body>
+
 </html>
