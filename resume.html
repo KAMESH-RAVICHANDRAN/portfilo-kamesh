@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamesh R - Resume</title>
+    <title>Kamesh R - Professional Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #8A2BE2;
-            --text-color: #333;
-            --light-text: #666;
-            --bg-color: #fff;
-            --border-color: #eee;
+            --primary-color: #6366f1;
+            --secondary-color: #4f46e5;
+            --text-main: #1f2937;
+            --text-light: #6b7280;
+            --bg-body: #f8fafc;
+            --bg-white: #ffffff;
+            --sidebar-width: 300px;
         }
 
         * {
@@ -22,313 +25,417 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text-color);
-            background-color: #f4f4f7;
-            line-height: 1.6;
-            padding: 40px 20px;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            line-height: 1.5;
+            padding: 40px 0;
         }
 
-        .resume-container {
-            max-width: 900px;
+        .resume {
+            max-width: 1000px;
             margin: 0 auto;
-            background: var(--bg-color);
-            padding: 50px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background: var(--bg-white);
+            display: grid;
+            grid-template-columns: var(--sidebar-width) 1fr;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            min-height: 1100px;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: #f1f5f9;
+            padding: 40px 30px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            display: block;
+            border: 4px solid var(--bg-white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .side-section {
+            margin-bottom: 35px;
+        }
+
+        .side-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .side-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #cbd5e1;
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-item i {
+            width: 16px;
+            color: var(--primary-color);
+        }
+
+        .skill-group-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 15px 0 8px;
+            color: var(--text-main);
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill-pill {
+            background: #e2e8f0;
+            color: #475569;
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            padding: 60px 50px;
         }
 
         header {
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            margin-bottom: 45px;
         }
 
-        .header-left h1 {
-            font-size: 2.5rem;
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        header .job-title {
+            font-size: 1.25rem;
             color: var(--primary-color);
-            margin-bottom: 5px;
+            font-weight: 500;
         }
 
-        .header-left p {
-            font-size: 1.2rem;
-            color: var(--light-text);
-        }
-
-        .header-right {
-            text-align: right;
-            font-size: 0.9rem;
-            color: var(--light-text);
-        }
-
-        .header-right div {
-            margin-bottom: 3px;
-        }
-
-        .header-right i {
-            width: 20px;
-            color: var(--primary-color);
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            color: var(--primary-color);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .exp-item,
-        .edu-item {
-            margin-bottom: 20px;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .item-sub {
-            display: flex;
-            justify-content: space-between;
+        .summary {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 25px;
             font-style: italic;
-            color: var(--light-text);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-header i {
+            color: var(--primary-color);
+        }
+
+        .exp-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .exp-role {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .exp-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 500;
             margin-bottom: 8px;
         }
 
-        .item-desc {
+        .exp-desc {
             font-size: 0.95rem;
+            color: var(--text-light);
             text-align: justify;
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .skill-group h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .skill-tag {
-            background: #f0f0f5;
-            padding: 4px 10px;
-            border-radius: 4px;
+        .project-link {
             font-size: 0.85rem;
-            color: #555;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
         }
 
-        .print-btn {
+        /* Print Button */
+        .controls {
             position: fixed;
             bottom: 30px;
             right: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
             background: var(--primary-color);
             color: white;
             border: none;
-            padding: 12px 20px;
-            border-radius: 50px;
+            padding: 12px 24px;
+            border-radius: 8px;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+            font-weight: 600;
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
             display: flex;
             align-items: center;
             gap: 8px;
-            font-weight: 600;
-            transition: transform 0.2s;
+            transition: all 0.2s;
+            text-decoration: none;
         }
 
-        .print-btn:hover {
-            transform: scale(1.05);
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--secondary-color);
         }
 
         @media print {
             body {
-                background: white;
                 padding: 0;
+                background: white;
             }
 
-            .resume-container {
+            .resume {
                 box-shadow: none;
                 max-width: 100%;
-                padding: 0;
+                border-radius: 0;
             }
 
-            .print-btn {
+            .controls {
                 display: none;
+            }
+
+            .sidebar {
+                background-color: #f8fafc !important;
+                -webkit-print-color-adjust: exact;
             }
         }
 
-        @media (max-width: 600px) {
-            .resume-container {
-                padding: 20px;
-            }
-
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .header-right {
-                text-align: left;
-                margin-top: 15px;
-            }
-
-            .skills-grid {
+        @media (max-width: 800px) {
+            .resume {
                 grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .main-content {
+                padding: 40px 30px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="resume-container">
-        <header>
-            <div class="header-left">
+    <div class="resume">
+        <aside class="sidebar">
+            <img src="profile.jpg" alt="Kamesh R" class="profile-photo">
+
+            <div class="side-section">
+                <h3 class="side-title">Contact</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kamesh14151@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9723b6326</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Tamil Nadu, India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/kamesh-aj</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/kamesh14151</span>
+                </div>
+            </div>
+
+            <div class="side-section">
+                <h3 class="side-title">Skills</h3>
+
+                <div class="skill-group-name">Languages</div>
+                <div class="skill-list">
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">C / C++</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">Postgres</span>
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">MongoDB</span>
+                </div>
+
+                <div class="skill-group-name">Frameworks</div>
+                <div class="skill-list">
+                    <span class="skill-pill">React</span>
+                    <span class="skill-pill">Next.js</span>
+                    <span class="skill-pill">FastAPI</span>
+                    <span class="skill-pill">NodeJS</span>
+                    <span class="skill-pill">TailwindCSS</span>
+                    <span class="skill-pill">OpenCV</span>
+                    <span class="skill-pill">Three.js</span>
+                    <span class="skill-pill">Vite</span>
+                </div>
+
+                <div class="skill-group-name">Cloud & Platforms</div>
+                <div class="skill-list">
+                    <span class="skill-pill">AWS</span>
+                    <span class="skill-pill">Azure</span>
+                    <span class="skill-pill">Google Cloud</span>
+                    <span class="skill-pill">Vercel</span>
+                    <span class="skill-pill">Netlify</span>
+                    <span class="skill-pill">Firebase</span>
+                </div>
+
+                <div class="skill-group-name">Design & Others</div>
+                <div class="skill-list">
+                    <span class="skill-pill">Adobe Photoshop</span>
+                    <span class="skill-pill">Lightroom</span>
+                    <span class="skill-pill">Illustrator</span>
+                    <span class="skill-pill">Canva</span>
+                    <span class="skill-pill">Docker</span>
+                    <span class="skill-pill">Power BI</span>
+                    <span class="skill-pill">Postman</span>
+                </div>
+            </div>
+
+            <div class="side-section">
+                <h3 class="side-title">Education</h3>
+                <div class="exp-role" style="font-size: 0.95rem;">B.E. Computer Science</div>
+                <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 5px;">Sona College of
+                    Technology</div>
+                <div style="font-size: 0.8rem; color: var(--primary-color);">2022 - 2026</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
                 <h1>Kamesh R</h1>
-                <p>Computer Science Engineer | AI & Web Specialist</p>
-            </div>
-            <div class="header-right">
-                <div><i class="fas fa-envelope"></i> kamesh14151@gmail.com</div>
-                <div><i class="fas fa-phone"></i> +91 9723b6326</div>
-                <div><i class="fas fa-location-dot"></i> Tamil Nadu, India</div>
-                <div><i class="fab fa-linkedin"></i> linkedin.com/in/kamesh-aj</div>
-                <div><i class="fab fa-github"></i> github.com/kamesh14151</div>
-            </div>
-        </header>
+                <div class="job-title">Full-Stack Developer & AI Specialist</div>
+            </header>
 
-        <section>
-            <h2>Summary</h2>
-            <p>Ambitious and results-driven Computer Science student with a strong focus on Artificial Intelligence and
-                Full-Stack Development. Proven track record in building automated systems and professional web
-                applications. Passionate about leveraging cutting-edge technologies like React, Next.js, and AI
-                frameworks to solve complex real-world problems.</p>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="edu-item">
-                <div class="item-header">
-                    <span>Bachelor of Engineering in Computer Science</span>
-                    <span>2022 - 2026</span>
-                </div>
-                <div class="item-sub">
-                    <span>Sona College of Technology</span>
-                    <span>Salem, India</span>
-                </div>
-                <p class="item-desc">Focusing on AI & Machine Learning with a foundation in algorithms and data
-                    structures. Actively participating in technical hackathons and academic research projects.</p>
+            <div class="summary">
+                Ambitious and results-driven Computer Science student focusing on Artificial Intelligence and Full-Stack
+                Development. Proven track record in building automated systems and professional web applications,
+                blending clean design with efficient back-end architecture.
             </div>
-        </section>
 
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h3>Languages & Core</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">C / C++</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">HTML5 / CSS3</span>
-                        <span class="skill-tag">Postgres / MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
+            <div class="section">
+                <h2 class="section-header"><i class="fas fa-briefcase"></i> Selected Projects</h2>
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span>GPA & CGPA Calculator</span>
+                        <a href="https://cgpa-calc-aj.vercel.app/" class="project-link" target="_blank">View Live <i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
+                    <p class="exp-desc">An intuitive tool for students to accurately calculate their Grade Point
+                        Averages. Built with a focus on user experience and precise algorithmic implementation.</p>
                 </div>
-                <div class="skill-group">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">NodeJS</span>
-                        <span class="skill-tag">TailwindCSS</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Three.js</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>AI & Cloud</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">Google Cloud</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Netlify / Vercel</span>
-                        <span class="skill-tag">Hugging Face</span>
-                        <span class="skill-tag">n8n / Agent Builder</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git / GitHub</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Adobe Suite</span>
-                        <span class="skill-tag">Canva</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section>
-            <h2>Selected Projects</h2>
-            <div class="exp-item">
-                <div class="item-header">
-                    <span>GPA & CGPA Calculator</span>
-                    <span><a href="https://cgpa-calc-aj.vercel.app/" target="_blank">Link</a></span>
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span>MVK Transports Website</span>
+                        <a href="https://mvk-transports.vercel.app/" class="project-link" target="_blank">View Live <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <p class="exp-desc">Professional corporate identity and multi-page web application for a logistics
+                        company. Features responsive design and service-oriented information architecture.</p>
                 </div>
-                <p class="item-desc">An intuitive tool for students to accurately calculate their Grade Point Averages,
-                    featuring a clean and user-friendly interface built with modern web standards.</p>
-            </div>
-            <div class="exp-item">
-                <div class="item-header">
-                    <span>MVK Transports Website</span>
-                    <span><a href="https://mvk-transports.vercel.app/" target="_blank">Link</a></span>
-                </div>
-                <p class="item-desc">A professional, multi-page business website designed for a transport company,
-                    featuring service details and contact information.</p>
-            </div>
-            <div class="exp-item">
-                <div class="item-header">
-                    <span>Personal Portfolio</span>
-                    <span>Current</span>
-                </div>
-                <p class="item-desc">A premium portfolio website featuring glassmorphism design, neon effects, and a
-                    comprehensive technical toolkit showcase.</p>
-            </div>
-        </section>
 
-        <section>
-            <h2>Certifications</h2>
-            <p>• Zayathon Hackathon Participant/Winner<br>• Advanced AI & Web Development Coursework</p>
-        </section>
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span>Location Fetching Platform</span>
+                        <a href="https://cgpa-calc-location-fetch.vercel.app/" class="project-link" target="_blank">View
+                            Live <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <p class="exp-desc">A web application demonstrating real-time geolocation services using browser
+                        APIs and Leaflet.js for interactive mapping.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span>Professional Portfolio</span>
+                        <span class="project-link">In Progress</span>
+                    </div>
+                    <p class="exp-desc">A high-end personal showcase site featuring glassmorphism, neon effects, and a
+                        comprehensive technical toolkit implementation.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-header"><i class="fas fa-graduation-cap"></i> Achievements</h2>
+                <ul style="list-style: none; color: var(--text-light); font-size: 0.95rem;">
+                    <li style="margin-bottom: 10px;">
+                        <i class="fas fa-trophy" style="color: #fbbf24; margin-right: 10px;"></i>
+                        <strong>Zayathon Hackathon:</strong> Participant & Winner in AI-focused challenges.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <i class="fas fa-certificate" style="color: var(--primary-color); margin-right: 10px;"></i>
+                        <strong>Advanced Certification:</strong> Specialized coursework in AI & Full-Stack Web
+                        Development.
+                    </li>
+                </ul>
+            </div>
+        </main>
     </div>
 
-    <button class="print-btn" onclick="window.print()">
-        <i class="fas fa-print"></i> Download as PDF
-    </button>
+    <div class="controls">
+        <a href="about.html" class="btn" style="background: #475569;"><i class="fas fa-arrow-left"></i> Back</a>
+        <button class="btn" onclick="window.print()"><i class="fas fa-download"></i> Download PDF</button>
+    </div>
 </body>
 
 </html>
