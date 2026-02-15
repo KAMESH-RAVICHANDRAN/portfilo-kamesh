@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamesh R - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* RESET & BASE */
+        /* ================= RESET ================= */
         * {
             margin: 0;
             padding: 0;
@@ -20,65 +21,69 @@
         body {
             font-family: 'Montserrat', sans-serif;
             background: #e0e0e0;
-            /* Slightly darker to make card pop */
             display: flex;
             justify-content: center;
             padding: 40px 20px;
             min-height: 100vh;
         }
 
+        /* AUTO SCALE FOR SMALL SCREENS */
+        @media (max-width:1200px) {
+            .resume {
+                transform: scale(0.9);
+                transform-origin: top center;
+            }
+        }
+
+        @media (max-width:1000px) {
+            .resume {
+                transform: scale(0.8);
+            }
+        }
+
+        /* ================= MAIN RESUME ================= */
         .resume {
             width: 210mm;
             min-height: 297mm;
-            /* Allow expansion if needed, but aim for A4 */
-            background: #ffffff;
+            background: #fff;
             display: flex;
-            position: relative;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
         }
 
-        /* LEFT SIDEBAR */
+        /* ================= LEFT SIDEBAR ================= */
         .left {
             width: 38%;
-            /* Slightly wider for skills */
             background: #d9d9d9;
-            color: #333;
-            padding: 80px 30px 40px 30px;
-            /* Top padding for profile circle space */
-            position: relative;
+            padding: 50px 30px 40px;
             display: flex;
             flex-direction: column;
-            gap: 35px;
+            align-items: center;
+            gap: 30px;
         }
 
-        /* PROFILE IMAGE (Overlapping) */
+        /* PROFILE IMAGE - PERFECT CENTER */
         .profile-circle {
-            position: absolute;
-            top: -65px;
-            /* Pull up to overlap header */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 190px;
-            height: 190px;
-            background: #e5e5e5;
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
-            border: 8px solid #ffffff;
-            /* White border to separate from backgrounds */
-            display: flex;
-            justify-content: center;
-            align-items: center;
             overflow: hidden;
+            border: 8px solid #fff;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            z-index: 10;
         }
 
         .profile-circle img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center 25%;
         }
 
-        /* LEFT PANEL SECTIONS */
+        /* LEFT SECTIONS */
+        .section-left {
+            width: 100%;
+        }
+
         .section-left h3 {
             font-size: 14px;
             font-weight: 800;
@@ -99,7 +104,6 @@
             opacity: 0.6;
         }
 
-        /* Links & Text in Left Panel */
         .contact-item {
             margin-bottom: 12px;
             font-size: 12.5px;
@@ -115,14 +119,8 @@
             width: 20px;
             text-align: center;
             color: #555;
-            font-size: 14px;
         }
 
-        .contact-item:hover {
-            color: #000;
-        }
-
-        /* Education Item */
         .edu-item {
             margin-bottom: 20px;
         }
@@ -136,7 +134,6 @@
         .edu-school {
             font-size: 12.5px;
             color: #444;
-            font-weight: 500;
             margin-bottom: 4px;
         }
 
@@ -144,10 +141,8 @@
             font-size: 11px;
             color: #666;
             font-weight: 600;
-            text-transform: uppercase;
         }
 
-        /* Skills List */
         .skill-category {
             margin-bottom: 20px;
         }
@@ -156,11 +151,7 @@
             font-weight: 700;
             font-size: 12px;
             text-transform: uppercase;
-            color: #222;
             margin-bottom: 8px;
-            border-bottom: 1px dotted #aaa;
-            padding-bottom: 2px;
-            display: inline-block;
         }
 
         .skill-items {
@@ -169,53 +160,37 @@
             color: #444;
         }
 
-        /* RIGHT MAIN PANEL */
+        /* ================= RIGHT PANEL ================= */
         .right {
             width: 62%;
-            position: relative;
             display: flex;
             flex-direction: column;
         }
 
-        /* HEADER BLOCK */
         .header {
             background: #4b5563;
-            /* Professional Dark Grey */
             color: white;
-            padding: 60px 40px 40px 40px;
-            text-align: left;
-            height: 190px;
-            /* Fixed height to match profile overlap */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            padding: 60px 50px;
         }
 
         .name {
             font-size: 42px;
             font-weight: 800;
-            letter-spacing: 1px;
-            line-height: 1;
             text-transform: uppercase;
         }
 
         .subtitle {
             margin-top: 12px;
             font-size: 14px;
-            font-weight: 500;
-            opacity: 0.9;
             letter-spacing: 1px;
             text-transform: uppercase;
-            display: flex;
-            gap: 10px;
         }
 
         .content {
-            padding: 40px 40px 40px 40px;
+            padding: 40px 50px;
             flex: 1;
         }
 
-        /* RIGHT PANEL SECTIONS */
         .section {
             margin-bottom: 35px;
         }
@@ -225,11 +200,10 @@
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            color: #222;
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
             gap: 15px;
-            margin-bottom: 20px;
         }
 
         .section h3::after {
@@ -246,82 +220,48 @@
             text-align: justify;
         }
 
-        /* TIMELINE EXPERIENCE */
+        /* TIMELINE */
         .timeline {
-            position: relative;
-            padding-left: 25px;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 7px;
-            top: 5px;
-            bottom: 5px;
-            width: 2px;
-            background: #e0e0e0;
+            border-left: 2px solid #e0e0e0;
+            padding-left: 20px;
         }
 
         .timeline-item {
-            position: relative;
-            margin-bottom: 30px;
-        }
-
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -24px;
-            top: 6px;
-            width: 12px;
-            height: 12px;
-            background: #4b5563;
-            border: 3px solid #fff;
-            border-radius: 50%;
-            box-shadow: 0 0 0 1px #e0e0e0;
+            margin-bottom: 25px;
         }
 
         .timeline-role {
             font-size: 15px;
             font-weight: 800;
-            color: #222;
-            margin-bottom: 4px;
         }
 
         .timeline-date {
             float: right;
             font-size: 12px;
             font-weight: 600;
-            color: #4b5563;
             background: #f3f4f6;
-            padding: 2px 8px;
+            padding: 3px 8px;
             border-radius: 4px;
         }
 
         .timeline-org {
             font-size: 13px;
-            font-weight: 600;
             color: #666;
-            margin-bottom: 8px;
-            display: block;
+            margin-bottom: 6px;
         }
 
         .timeline-desc {
             font-size: 13px;
-            margin-top: 8px;
             line-height: 1.6;
             color: #555;
-            padding-left: 15px;
+            margin-left: 15px;
         }
 
         .timeline-desc li {
             margin-bottom: 4px;
         }
 
-        /* ACHIEVEMENTS GRID */
+        /* ACHIEVEMENTS */
         .achievements-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -337,101 +277,55 @@
         .achievement-title {
             font-size: 13px;
             font-weight: 700;
-            color: #222;
-            margin-bottom: 4px;
-            display: block;
         }
 
         .achievement-desc {
             font-size: 12px;
             color: #666;
-            line-height: 1.5;
         }
 
-        /* FAB */
+        /* FLOAT BUTTON */
         .fab-controls {
             position: fixed;
             bottom: 30px;
             right: 30px;
             display: flex;
             gap: 15px;
-            z-index: 100;
         }
 
         .action-btn {
-            background: #222;
+            background: #4f46e5;
             color: white;
             border: none;
             padding: 12px 24px;
             border-radius: 50px;
             cursor: pointer;
             font-weight: 600;
-            font-family: inherit;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            text-decoration: none;
-            font-size: 13px;
         }
 
-        .action-btn.primary {
-            background: #4f46e5;
-        }
-
-        .action-btn:hover {
-            transform: translateY(-2px);
-        }
-
-        /* PRINT MEDIA */
+        /* PRINT PERFECT A4 */
         @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
             body {
                 background: none;
                 padding: 0;
-                display: block;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
 
             .resume {
-                width: 100%;
-                height: auto;
-                min-height: 100vh;
+                width: 210mm;
+                height: 297mm;
                 box-shadow: none;
-                margin: 0;
+                transform: none !important;
             }
 
             .fab-controls {
                 display: none;
-            }
-
-            /* Ensure background colors print */
-            .left {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                background: #d9d9d9 !important;
-            }
-
-            .header {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                background: #4b5563 !important;
-                color: white !important;
-            }
-
-            .profile-circle {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                border-color: #fff !important;
-            }
-
-            /* Page Break Handling */
-            .section,
-            .timeline-item {
-                break-inside: avoid;
-            }
-
-            @page {
-                margin: 0;
-                size: A4;
             }
         }
     </style>
@@ -441,14 +335,12 @@
 
     <div class="resume">
 
-        <!-- LEFT PANEL (Sidebar) -->
+        <!-- LEFT -->
         <div class="left">
+
             <div class="profile-circle">
                 <img src="profile.jpg" alt="Kamesh R">
             </div>
-
-            <!-- Spacer for overlapping profile image -->
-            <div style="height: 100px;"></div>
 
             <div class="section-left">
                 <h3>Contact</h3>
@@ -466,19 +358,16 @@
 
             <div class="section-left">
                 <h3>Education</h3>
-
                 <div class="edu-item">
                     <div class="edu-degree">B.E. Computer Science</div>
                     <div class="edu-school">Sona College of Technology</div>
                     <div class="edu-date">2024 – 2028 (Expected)</div>
                 </div>
-
                 <div class="edu-item">
                     <div class="edu-degree">Higher Secondary (HSC-2)</div>
                     <div class="edu-school">Meenampark Matric Hr Sec</div>
                     <div class="edu-date">2024</div>
                 </div>
-
                 <div class="edu-item">
                     <div class="edu-degree">SSLC</div>
                     <div class="edu-school">Govt Boys Hr Sec School</div>
@@ -488,27 +377,22 @@
 
             <div class="section-left">
                 <h3>Skills</h3>
-
                 <div class="skill-category">
                     <div class="skill-category-title">Languages</div>
                     <div class="skill-items">Python, JavaScript, Java, C++</div>
                 </div>
-
                 <div class="skill-category">
                     <div class="skill-category-title">Frontend</div>
                     <div class="skill-items">React.js, Next.js, Tailwind CSS, Three.js</div>
                 </div>
-
                 <div class="skill-category">
                     <div class="skill-category-title">Backend</div>
                     <div class="skill-items">Node.js, FastAPI, REST APIs, PostgreSQL, MongoDB</div>
                 </div>
-
                 <div class="skill-category">
                     <div class="skill-category-title">AI / ML</div>
                     <div class="skill-items">TensorFlow, PyTorch, Scikit-learn, LangChain, LLM Integration</div>
                 </div>
-
                 <div class="skill-category">
                     <div class="skill-category-title">DevOps & Tools</div>
                     <div class="skill-items">AWS, Azure, Docker, Git, Vercel</div>
@@ -518,27 +402,20 @@
             <div class="section-left">
                 <h3>Languages</h3>
                 <div class="skill-items">
-                    <div style="margin-bottom: 4px;"><strong>English:</strong> Read & Write</div>
-                    <div style="margin-bottom: 4px;"><strong>Tamil:</strong> Read & Write</div>
+                    <div><strong>English:</strong> Read & Write</div>
+                    <div><strong>Tamil:</strong> Read & Write</div>
                     <div><strong>Telugu:</strong> Speak</div>
                 </div>
             </div>
 
-            <div class="section-left" style="margin-top:auto">
-                <div class="contact-item" style="color:#555; font-size: 11px;">
-                    <i class="fab fa-github"></i> 100+ GitHub Commits
-                </div>
-            </div>
         </div>
 
-        <!-- RIGHT PANEL (Main) -->
+        <!-- RIGHT -->
         <div class="right">
 
             <div class="header">
                 <div class="name">Kamesh R</div>
-                <div class="subtitle">
-                    <span>AI/ML Engineer</span> • <span>Full-Stack Developer</span>
-                </div>
+                <div class="subtitle">AI/ML Engineer • Full-Stack Developer</div>
             </div>
 
             <div class="content">
@@ -560,7 +437,7 @@
                         <div class="timeline-item">
                             <span class="timeline-date">2025 – Present</span>
                             <div class="timeline-role">Founder – AJ STUDIOZ</div>
-                            <span class="timeline-org">Self-Initiated Project</span>
+                            <div class="timeline-org">Self-Initiated Project</div>
                             <ul class="timeline-desc">
                                 <li>Built multi-model AI system integrating GPT-4, Claude & Gemini.</li>
                                 <li>Reduced response latency to under 1.5 seconds.</li>
@@ -573,7 +450,7 @@
                         <div class="timeline-item">
                             <span class="timeline-date">Zayathon Winner</span>
                             <div class="timeline-role">TOMO Chat – AI Platform</div>
-                            <span class="timeline-org">Multi-LLM Architecture</span>
+                            <div class="timeline-org">Multi-LLM Architecture</div>
                             <ul class="timeline-desc">
                                 <li>Integrated 10+ LLMs (GPT-4, Claude, Gemini) with streaming.</li>
                                 <li>Implemented web search, file analysis, and image generation.</li>
@@ -591,25 +468,25 @@
 
                     <div class="achievements-grid">
                         <div class="achievement-card">
-                            <span class="achievement-title">🏆 Zayathon Winner</span>
-                            <span class="achievement-desc">Awarded for innovative Multi-LLM AI Platform (TOMO
-                                Chat).</span>
+                            <div class="achievement-title">🏆 Zayathon Winner</div>
+                            <div class="achievement-desc">Awarded for innovative Multi-LLM AI Platform (TOMO Chat).
+                            </div>
                         </div>
 
                         <div class="achievement-card">
-                            <span class="achievement-title">🌟 Zayathon Top 5</span>
-                            <span class="achievement-desc">Recognized for excellence in AI Hackathon 2026.</span>
+                            <div class="achievement-title">🌟 Zayathon Top 5</div>
+                            <div class="achievement-desc">Recognized for excellence in AI Hackathon 2026.</div>
                         </div>
 
                         <div class="achievement-card">
-                            <span class="achievement-title">📜 Google ML Crash Course</span>
-                            <span class="achievement-desc">Comprehensive machine learning certification from
-                                Google.</span>
+                            <div class="achievement-title">📜 Google ML Crash Course</div>
+                            <div class="achievement-desc">Comprehensive machine learning certification from Google.
+                            </div>
                         </div>
 
                         <div class="achievement-card">
-                            <span class="achievement-title">💻 Advanced AI Cert</span>
-                            <span class="achievement-desc">TopLearn.AI certification in advanced AI systems.</span>
+                            <div class="achievement-title">💻 Advanced AI Cert</div>
+                            <div class="achievement-desc">TopLearn.AI certification in advanced AI systems.</div>
                         </div>
                     </div>
                 </div>
@@ -619,23 +496,10 @@
 
     </div>
 
-    <!-- Floating Helper (Visible only on Web) -->
     <div class="fab-controls">
-        <a href="about.html" class="action-btn"><i class="fas fa-times"></i> Close</a>
-        <button class="action-btn primary" onclick="window.print()"><i class="fas fa-file-pdf"></i> Save as PDF</button>
+        <button class="action-btn" onclick="window.print()">Save as PDF</button>
     </div>
 
-    <!-- Auto-Print Logic -->
-    <script>
-        window.onload = function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('autoprint')) {
-                setTimeout(() => {
-                    window.print();
-                }, 500);
-            }
-        }
-    </script>
 </body>
 
 </html>
