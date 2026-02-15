@@ -581,6 +581,16 @@
         <button class="action-btn primary" onclick="window.print()"><i class="fas fa-file-pdf"></i> Generate PDF
             Resume</button>
     </div>
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('autoprint')) {
+                setTimeout(() => {
+                    window.print();
+                }, 500); // Small delay to ensure styles are loaded
+            }
+        }
+    </script>
 </body>
 
 </html>
