@@ -273,6 +273,8 @@
                 background: white;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+                height: 100%;
+                overflow: hidden;
             }
 
             .resume-wrapper {
@@ -281,71 +283,103 @@
                 max-width: 100%;
                 border-radius: 0;
                 display: grid !important;
-                grid-template-columns: var(--sidebar-w) 1fr !important;
-                min-height: auto;
+                grid-template-columns: 280px 1fr !important;
+                min-height: 100vh;
+                height: 100%;
             }
 
             .sidebar {
-                padding: 30px 25px !important;
+                padding: 12px 10px !important;
                 background-color: #fafafa !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
 
             .content-main {
-                padding: 40px 40px !important;
+                padding: 15px 22px !important;
             }
 
             .sidebar-h3 {
-                margin-bottom: 12px !important;
+                margin-bottom: 5px !important;
+                font-size: 0.65rem !important;
             }
 
             .sidebar-section {
-                margin-bottom: 25px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .sidebar-section p {
+                margin: 8px 0 5px !important;
             }
 
             .hero-banner {
-                margin-bottom: 25px !important;
+                margin-bottom: 5px !important;
             }
 
             .bio-text {
-                margin-bottom: 25px !important;
-                font-size: 0.95rem !important;
+                margin-bottom: 8px !important;
+                font-size: 0.72rem !important;
+                line-height: 1.25 !important;
             }
 
             .name-title h1 {
-                font-size: 2.8rem !important;
+                font-size: 1.7rem !important;
+                margin-bottom: 2px !important;
             }
 
             .main-section-h2 {
-                margin-bottom: 15px !important;
-                font-size: 1.2rem !important;
+                margin-bottom: 6px !important;
+                font-size: 0.9rem !important;
+            }
+
+            .section {
+                margin-bottom: 8px !important;
             }
 
             .item-card {
-                margin-bottom: 15px !important;
-                padding-bottom: 10px !important;
+                margin-bottom: 6px !important;
+                padding-bottom: 4px !important;
+                border-bottom: 1px solid #eee !important;
             }
 
             .item-title {
-                font-size: 1.1rem !important;
+                font-size: 0.8rem !important;
+            }
+
+            .item-org {
+                font-size: 0.75rem !important;
+                margin-bottom: 4px !important;
+            }
+
+            .item-p {
+                font-size: 0.72rem !important;
+                line-height: 1.25 !important;
+            }
+
+            .profile-img-container {
+                width: 85px !important;
+                height: 85px !important;
+                margin-bottom: 8px !important;
+            }
+
+            .info-link {
+                font-size: 0.65rem !important;
+                margin-bottom: 4px !important;
+            }
+
+            .skill-box {
+                font-size: 0.55rem !important;
+                padding: 1px 4px !important;
+                margin-bottom: 2px !important;
+            }
+
+            .project-action {
+                font-size: 0.65rem !important;
+                margin-top: 2px !important;
             }
 
             .fab-controls {
                 display: none !important;
-            }
-
-            .item-date {
-                background: #eef2ff !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                font-size: 0.75rem !important;
-            }
-
-            .skill-box {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                padding: 4px 8px !important;
             }
 
             @page {
@@ -389,10 +423,12 @@
                     kamesh14151@gmail.com</a>
                 <a href="tel:+919723b6326" class="info-link"><i class="fas fa-phone"></i> +91 9723b6326</a>
                 <div class="info-link"><i class="fas fa-location-dot"></i> Tamil Nadu, India</div>
-                <a href="https://linkedin.com/in/kamesh-aj-9723b6326" target="_blank" class="info-link"><i
-                        class="fab fa-linkedin"></i> kamesh-aj</a>
+                <a href="https://linkedin.com/in/kamesh-aj" target="_blank" class="info-link"><i
+                        class="fab fa-linkedin"></i> linkedin.com/in/kamesh-aj</a>
                 <a href="https://github.com/kamesh14151" target="_blank" class="info-link"><i class="fab fa-github"></i>
-                    kamesh14151</a>
+                    github.com/kamesh14151</a>
+                <a href="https://kamesh.ajstudioz.co.in" target="_blank" class="info-link"><i class="fas fa-globe"></i>
+                    kamesh.ajstudioz.co.in</a>
             </div>
 
             <div class="sidebar-section">
@@ -403,22 +439,52 @@
                         Technology</p>
                     <span class="item-date" style="font-size: 0.75rem;">2024 - 2028</span>
                 </div>
+                <div style="margin-bottom: 20px;">
+                    <p style="font-weight: 800; font-size: 0.95rem; color: var(--text-main);">Higher Secondary (HSC-2)
+                    </p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Meenampark Matric Hr
+                        Sec School</p>
+                    <span class="item-date" style="font-size: 0.75rem;">2023 - 2024</span>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <p style="font-weight: 800; font-size: 0.95rem; color: var(--text-main);">SSLC</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Govt Boys Higher Sec
+                        School Menacheri</p>
+                    <span class="item-date" style="font-size: 0.75rem;">2021 - 2022</span>
+                </div>
             </div>
 
             <div class="sidebar-section">
                 <h3 class="sidebar-h3">Core Skills</h3>
-                <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">Languages</p>
+
+                <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">Programming</p>
                 <div class="skill-list-boxed">
-                    <span class="skill-box">Python</span><span class="skill-box">JS</span><span
-                        class="skill-box">Java</span><span class="skill-box">C++</span><span
-                        class="skill-box">Postgres</span><span class="skill-box">MongoDB</span>
+                    <span class="skill-box">Python (Adv)</span><span class="skill-box">JavaScript (Adv)</span><span
+                        class="skill-box">C++</span><span class="skill-box">Java</span>
                 </div>
 
-                <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">Web Stack</p>
+                <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">Backend</p>
+                <div class="skill-list-boxed">
+                    <span class="skill-box">Node.js</span><span class="skill-box">FastAPI</span><span
+                        class="skill-box">REST APIs</span>
+                </div>
+
+                <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">Frontend</p>
                 <div class="skill-list-boxed">
                     <span class="skill-box">React</span><span class="skill-box">Next.js</span><span
-                        class="skill-box">FastAPI</span><span class="skill-box">Node.js</span><span
                         class="skill-box">Tailwind</span><span class="skill-box">Three.js</span>
+                </div>
+
+                <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">Databases</p>
+                <div class="skill-list-boxed">
+                    <span class="skill-box">PostgreSQL</span><span class="skill-box">MongoDB</span>
+                </div>
+
+                <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">AI/ML</p>
+                <div class="skill-list-boxed">
+                    <span class="skill-box">TensorFlow</span><span class="skill-box">PyTorch</span><span
+                        class="skill-box">Scikit-learn</span><span class="skill-box">LangChain</span><span
+                        class="skill-box">Prompt Eng</span>
                 </div>
 
                 <p style="font-size: 0.85rem; font-weight: 700; margin: 15px 0 10px;">DevOps & Tools</p>
@@ -426,6 +492,15 @@
                     <span class="skill-box">AWS</span><span class="skill-box">Azure</span><span
                         class="skill-box">Docker</span><span class="skill-box">Git</span><span
                         class="skill-box">Vercel</span><span class="skill-box">Postman</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-h3">Languages Known</h3>
+                <div style="font-size: 0.8rem; line-height: 1.4;">
+                    <p style="margin-bottom: 4px;"><strong>Tamil:</strong> Read & Write</p>
+                    <p style="margin-bottom: 4px;"><strong>English:</strong> Read & Write</p>
+                    <p style="margin-bottom: 4px;"><strong>Telugu:</strong> Speak</p>
                 </div>
             </div>
         </aside>
@@ -439,44 +514,67 @@
             </div>
 
             <p class="bio-text">
-                Dynamic and innovative Computer Science student at Sona College of Technology, specializing in the
-                intersection of Artificial Intelligence and high-performance Web Development. I possess a deep aptitude
-                for architecting scalable full-stack solutions and implementing complex AI/ML models. Committed to
-                delivering aesthetic, goal-oriented technology that bridges the gap between complex backend logic and
-                intuitive user experiences.
+                Full-Stack Engineer and AI/ML enthusiast building scalable AI-powered applications. Experienced in
+                integrating multi-model LLM systems, real-time web architectures, and cloud deployments. Passionate
+                about bridging intelligent backend systems with seamless user experiences.
             </p>
+
+            <div class="section">
+                <h2 class="main-section-h2"><i class="fas fa-briefcase"></i> Experience</h2>
+
+                <div class="item-card">
+                    <div class="item-top">
+                        <span class="item-title">Founder – AJ STUDIOZ</span>
+                        <span class="item-date">2025 – Present</span>
+                    </div>
+                    <div class="item-org">Self-Initiated Project</div>
+                    <p class="item-p">Founded and leading AI STUDIOZ, developing scalable AI-powered web platforms.
+                        Designed multi-model LLM architecture integrating GPT-4, Claude, and Gemini. Managed end-to-end
+                        deployment using Vercel and AWS.</p>
+                </div>
+
+            </div>
 
             <div class="section">
                 <h2 class="main-section-h2"><i class="fas fa-code-branch"></i> Signature Projects</h2>
 
                 <div class="item-card">
                     <div class="item-top">
-                        <span class="item-title">MVK Transports Corporate Hub</span>
-                        <span class="item-date">Business Impact</span>
+                        <span class="item-title">TOMO Chat - AI Chatbot Platform</span>
+                        <span class="item-date">Zayathon Winner</span>
                     </div>
-                    <div class="item-org">Enterprise Solution</div>
-                    <p class="item-p">Developed a comprehensive digital ecosystem for a logistics enterprise. Focused on
-                        high-availability, professional information architecture, and lead generation.</p>
-                    <a href="https://mvk-transports.vercel.app/" class="project-action" target="_blank">Live Production
-                        <i class="fas fa-arrow-right"></i></a>
+                    <div class="item-org">All-in-One AI Platform</div>
+                    <p class="item-p">Built an AI chatbot platform integrating 10+ LLMs (GPT-4, Claude, Gemini), serving
+                        500+ users with real-time response under 1.5s latency. Features include web search, code
+                        execution, file analysis, image generation, voice chat, custom AI agents, data visualization,
+                        and MCP tool integration.</p>
+                    <div class="project-action">🌐 chat.tomoacademy.site</div>
                 </div>
 
             </div>
 
             <div class="section">
-                <h2 class="main-section-h2"><i class="fas fa-award"></i> Key Achievements</h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                    <div
-                        style="background: var(--bg-page); padding: 15px; border-radius: 12px; border: 1px dashed var(--primary);">
-                        <p style="font-weight: 800; font-size: 0.9rem; margin-bottom: 5px;">Zayathon Champion</p>
-                        <p style="font-size: 0.8rem; color: var(--text-muted);">Secured top honors in a competitive
-                            AI-focused hackathon environment.</p>
+                <h2 class="main-section-h2"><i class="fas fa-award"></i> Certifications & Achievements</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <div class="skill-box"
+                        style="display: block; font-size: 0.75rem !important; padding: 6px 10px !important;">
+                        <strong>Zayathon Hackathon - Top 5</strong><br>
+                        <span style="color: var(--text-muted); font-size: 0.7rem;">Zayathon (2026)</span>
                     </div>
-                    <div
-                        style="background: var(--bg-page); padding: 15px; border-radius: 12px; border: 1px dashed var(--primary);">
-                        <p style="font-weight: 800; font-size: 0.9rem; margin-bottom: 5px;">Advanced AI Cert</p>
-                        <p style="font-size: 0.8rem; color: var(--text-muted);">Recognized for mastery in deep learning
-                            and neural network integration.</p>
+                    <div class="skill-box"
+                        style="display: block; font-size: 0.75rem !important; padding: 6px 10px !important;">
+                        <strong>Responsive Web Design</strong><br>
+                        <span style="color: var(--text-muted); font-size: 0.7rem;">freeCodeCamp</span>
+                    </div>
+                    <div class="skill-box"
+                        style="display: block; font-size: 0.75rem !important; padding: 6px 10px !important;">
+                        <strong>Google ML Crash Course</strong><br>
+                        <span style="color: var(--text-muted); font-size: 0.7rem;">Google</span>
+                    </div>
+                    <div class="skill-box"
+                        style="display: block; font-size: 0.75rem !important; padding: 6px 10px !important;">
+                        <strong>Advanced AI Certification</strong><br>
+                        <span style="color: var(--text-muted); font-size: 0.7rem;">TopLearn.AI</span>
                     </div>
                 </div>
             </div>
