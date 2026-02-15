@@ -64,14 +64,8 @@
 
         /* PROFILE IMAGE - PERFECT CENTER */
         .profile-circle {
-            position: absolute;
-            top: -65px;
-            /* Pull up to overlap header */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 190px;
-            height: 190px;
-            background: #e5e5e5;
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
             overflow: hidden;
             border: 8px solid #fff;
@@ -82,6 +76,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center 25%;
         }
 
         /* LEFT SECTIONS */
@@ -175,13 +170,7 @@
         .header {
             background: #4b5563;
             color: white;
-            padding: 60px 40px 40px 40px;
-            text-align: left;
-            height: 190px;
-            /* Fixed height to match profile overlap */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            padding: 60px 50px;
         }
 
         .name {
@@ -316,53 +305,27 @@
 
         /* PRINT PERFECT A4 */
         @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
             body {
                 background: none;
                 padding: 0;
-                display: block;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
 
             .resume {
-                width: 100%;
-                height: auto;
-                min-height: 100vh;
+                width: 210mm;
+                height: 297mm;
                 box-shadow: none;
-                margin: 0;
+                transform: none !important;
             }
 
             .fab-controls {
                 display: none;
-            }
-
-            /* Ensure background colors print */
-            .left {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                background: #d9d9d9 !important;
-            }
-
-            .header {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                background: #4b5563 !important;
-                color: white !important;
-            }
-
-            .profile-circle {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-                border-color: #fff !important;
-            }
-
-            /* Page Break Handling */
-            .section,
-            .timeline-item {
-                break-inside: avoid;
-            }
-
-            @page {
-                margin: 0;
-                size: A4;
             }
         }
     </style>
@@ -378,9 +341,6 @@
             <div class="profile-circle">
                 <img src="profile.jpg" alt="Kamesh R">
             </div>
-
-            <!-- Spacer for overlapping profile image -->
-            <div style="height: 100px;"></div>
 
             <div class="section-left">
                 <h3>Contact</h3>
